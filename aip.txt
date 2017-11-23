@@ -1,0 +1,66 @@
+https://wiki.ith.intel.com/display/Simics/Getting+Started+with+Simics+4.8#GettingStartedwithSimics4.8-downloads
+About the keys for 4.8
+Simics Base 1000 48f1b619e15ba241ab7df6d5940e4204
+ 
+Simics Eclipse 4.3 1001 547274b3080c844fb8f1161eedc890bb 1000 Does not work on SLES10. Use package 1002 instead.
+Simics Eclipse 3.8 1002    bfbc3ce570ba1389433f57f9eed7af2a    1000     
+Model Builder   1010 7bb73a4222538f7d4ef4b3c3c3b5d49a 1000 MinGW can be downloaded here
+Extension Builder 1012 ff37d33e35d7615af3f46acf0c8d89b1 1000, 1010
+  
+Firststeps 4005 82ab83e79745e4e31306c695e16c745d 1000
+   
+SystemC Bridge  4015   ad17e1b8859147c90f9627fad03a8320
+SystemC Bridge Libraries    4016  2d7c01159edc39da65ec39739dac1603
+
+
+mdb -digilent -on=verify_download -nogoifmain -cl -hard kickstart
+
+file2mem -s bootstrap.srec
+
+file2mem -s ihl2_bootstrap.srec 
+
+file2mem -s ihl2_bootstrap_simics.srec 
+
+mem 0xbf6e807c
+
+emem 0xbf6e807c 0xff
+emem 0xbf6e807c 0x2ff
+
+mem 0xb7fffff0
+
+mem 0xb7dffff0
+
+-nostartfiles
+
+ make -f Makefile.bootstrap CONFIG_SYSTEM_TEXT_BASE=0x210000 C=default V=1 Q=
+
+ rl 0xbf6e807c
+ wl 0xbf6e807c 0xff
+ wl 0xbf6e807c 0x2ff
+
+ wl 0x9000000c 0x1
+
+ wl 0x80010010 0x1
+
+ wl 0xbf6e80bc 0x1
+
+ memd 0xb7d079e0
+
+
+ wl 0xbf6e807c 0x1ff
+
+ wl 0xbf6e807c 0x3ff
+
+ ~/AIP/code/ihl2_vre/il_ihl2_sdv-apps/firmware/small_apps$
+
+ 路        make config C=ihl2-accel
+
+ 路        make CONFIG_SYSTEM_TEXT_BASE=0x200000
+
+ 路        arc-elf32-objcopy -O srec --change-address=+0xb7d00000 build/fw/examples/driver_model/driver_model_example build/fw/examples/driver_model/driver_model_example.srec
+
+ 路        arc-elf32-readelf -a build/fw/examples/driver_model/driver_model_example | more
+
+ 路        cp ./build/fw/examples/driver_model/driver_model_example.srec ~/ -f
+
+make INSTALL_DIR=/home/bingquan/ihl2_vre/il_ihl2_sdv-apps/software/tappy/ecos_install

@@ -1,0 +1,53 @@
+Getting Android F+ Kernel 4.4 Latest code:
+Branch ndg/android-staging-N has been created to support transition from Android-M (Emerald) to Android-N (Feldspath)
+Repo init command:
+1- repo init -u ssh://android.intel.com/a/aosp/platform/manifest -b integ/ndg-android-f -m ndg-android-f
+2- cd .repo/manifests
+3- apply https://android.intel.com/#/c/550768/
+4- repo sync -c -j32
+5- Apply below additional patches:
+Additional Patches:
+Project
+Patch (on android-staging-N branch)
+device/intel/robby	https://android.intel.com/#/c/551963/
+device/intel/robby	https://android.intel.com/#/c/549687/
+linux/kernel	https://android.intel.com/#/c/551963/
+ 
+ Build instructions:
+ source build/envsetup.sh
+ lunch
+ make -j32 blank_flashfiles flashfiles
+ To be able to build only the bootimage:
+ Apply https://android.intel.com/#/c/553598/
+ make bootimage
+ 
+ cd .repo/manifests
+ git fetch ssh://$USER@android.intel.com:29418/a/aosp/platform/manifest refs/changes/68/550768/2 && git cherry-pick FETCH_HEAD
+ repo download -c a/aosp/device/intel/robby 550645/2
+ repo download -c a/aosp/device/intel/robby 549687/4
+ repo download -c a/bsp/hardware/intel/linux-2.6 551963
+
+ Hi all,
+
+ F4.4 Jenkins builders are now available. Latest and Engineering Jenkins builds could be used:
+ http://jenkins-dswci-ndg.tl.intel.com/jenkins/view/NDG-Android-f-k44/ 
+ Many thanks to Marie-C篓娄line ?
+
+ To build F4.4 build, it隆炉s now easier than ever:
+ Get F4.4 latest code:
+ repo init -u ssh://android.intel.com/a/aosp/platform/manifest -m ndg-android-f-k44 -b integ/ndg-android-f
+ repo sync -j32
+ repo download -c a/aosp/device/intel/anthracite 556164/14
+
+ Build instructions:
+ source build/envsetup.sh
+ lunch
+ make blank_flashfiles flashfiles
+
+ FYI:
+ Latest and engineering F4.4 jobs are cherry-picking this gerrit ID automatically: 556164.
+ Also you need to know that compared to F3.10 only linux/kernel module is on another branch which is ndg/dev/linux-4.4.
+
+ Confluence page for kernel 4.4
+ https://confluence.ndg.intel.com/display/MAR/Kernel+4.4+Transition+on+Android+Feldspar 
+

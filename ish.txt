@@ -1,0 +1,57 @@
+shell@cht_ffd:/sys/bus/pci/devices/0000:00:0a.0 $ ls -l
+-rw-r--r-- root     root         4096 2015-03-29 16:44 broken_parity_status
+-r--r--r-- root     root         4096 2015-03-29 16:41 class
+-rw-r--r-- root     root          256 2015-03-29 16:41 config
+-r--r--r-- root     root         4096 2015-03-29 16:44 consistent_dma_mask_bits
+-rw-r--r-- root     root         4096 2015-03-29 16:44 d3cold_allowed
+-r--r--r-- root     root         4096 2015-03-29 16:41 device
+-r--r--r-- root     root         4096 2015-03-29 16:44 dma_mask_bits
+lrwxrwxrwx root     root              2015-03-29 16:44 driver -> ../../../bus/pci/drivers/heci_ish
+-rw-r--r-- root     root         4096 2015-03-29 16:44 enable
+lrwxrwxrwx root     root              2015-03-29 16:44 firmware_node -> ../../LNXSYSTM:00/device:00/PNP0A08:00/device:33
+-rw-r--r-- root     root         4096 2015-03-29 16:44 force_hid_fc
+-rw-r--r-- root     root         4096 2015-03-29 16:43 fw_status
+-rw-r--r-- root     root         4096 2015-03-29 16:44 hbm_state
+-rw-r--r-- root     root         4096 2015-03-29 16:44 heci_dev_state
+-rw-r--r-- root     root         4096 2015-03-29 16:42 host_clients
+-rw-r--r-- root     root         4096 2015-03-29 16:44 ipc_buf
+-r--r--r-- root     root         4096 2015-03-29 16:41 irq
+-r--r--r-- root     root         4096 2015-03-29 16:44 local_cpulist
+-r--r--r-- root     root         4096 2015-03-29 16:44 local_cpus
+drwxr-xr-x root     root              2015-03-25 20:31 misc
+-r--r--r-- root     root         4096 2015-03-29 16:44 modalias
+-rw-r--r-- root     root         4096 2015-03-29 16:43 msi_bus
+drwxr-xr-x root     root              2015-03-29 16:43 power
+--w--w---- root     root         4096 2015-03-29 16:44 remove
+--w--w---- root     root         4096 2015-03-29 16:44 rescan
+-r--r--r-- root     root         4096 2015-03-29 16:41 resource
+-rw------- root     root         4096 2015-03-29 16:44 resource0
+-rw-r--r-- root     root         4096 2015-03-29 16:44 stats
+-r--r--r-- root     root         4096 2015-03-29 16:44 subsystem_device
+-r--r--r-- root     root         4096 2015-03-29 16:44 subsystem_vendor
+-rw-r--r-- root     root         4096 2015-03-29 16:44 uevent
+-r--r--r-- root     root         4096 2015-03-29 16:41 vendor
+drwxr-xr-x root     root              2015-03-25 20:31 {1F050626-D505-4E94-B189-535D7DE19CF2}
+drwxr-xr-x root     root              2015-03-25 20:31 {28536C54-CF99-4F27-A6F3-499741BAADFE}
+drwxr-xr-x root     root              2015-03-25 20:31 {33AECD58-B679-4E54-9BD9-A04D34F0C226}
+drwxr-xr-x root     root              2015-03-25 20:31 {BB579A2E-CC54-4450-B1D0-5E7520DCAD25}
+drwxr-xr-x root     root              2015-03-25 20:31 {C1CC78B9-B693-4E54-9191-5169CB027C25}
+shell@cht_ffd:/sys/bus/pci/devices/0000:00:0a.0 $ cat loc
+local_cpulist   local_cpus      
+at local_cpus                                                                 <
+ffffffff
+at local_cpulist                                                              <
+0-31
+
+00:0a.0 Class 0000: Device 8086:22d8 (rev 20)
+    Subsystem: Device 8086:7270
+    Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+    Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+    Latency: 0
+    Interrupt: pin A routed to IRQ 20
+    Region 0: Memory at 9223d000 (32-bit, non-prefetchable) [size=4K]
+    Capabilities: [80] Power Management version 3
+Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+    Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+    Kernel driver in use: heci_ish
+

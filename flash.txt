@@ -1,0 +1,11 @@
+[1] flash using adb/fastboot procedure:
+adb reboot bootloader
+fastboot oem unlock
+fastboot format data
+fastboot format cache
+fastboot flash boot boot.img
+fastboot flash recovery recovery.img
+fastboot flash bootloader bootloader.img
+fastboot flash cache cache.img
+fastboot flash system system.img
+fastboot continue

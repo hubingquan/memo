@@ -1,0 +1,30 @@
+First, rewinding head to replay your work on top of it...
+Applying: AwareHub failed to start on external release
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+CONFLICT (modify/delete): package/AwareServicePacks/AwareHubPluginsShareOne/AndroidManifest.xml deleted in HEAD and modified in AwareHub failed to start on external release. Version AwareHub failed to start on external release of package/AwareServicePacks/AwareHubPluginsShareOne/AndroidManifest.xml left in tree.
+CONFLICT (modify/delete): package/AwareServicePacks/AwareHubPluginsShareOne/Android.mk deleted in HEAD and modified in AwareHub failed to start on external release. Version AwareHub failed to start on external release of package/AwareServicePacks/AwareHubPluginsShareOne/Android.mk left in tree.
+CONFLICT (modify/delete): package/AwareServicePacks/AwareHubPluginsMOFD/AndroidManifest.xml deleted in HEAD and modified in AwareHub failed to start on external release. Version AwareHub failed to start on external release of package/AwareServicePacks/AwareHubPluginsMOFD/AndroidManifest.xml left in tree.
+CONFLICT (modify/delete): package/AwareServicePacks/AwareHubPluginsMOFD/Android.mk deleted in HEAD and modified in AwareHub failed to start on external release. Version AwareHub failed to start on external release of package/AwareServicePacks/AwareHubPluginsMOFD/Android.mk left in tree.
+CONFLICT (modify/delete): package/AwareServicePacks/AwareHubPluginsAwareService/Android.mk deleted in HEAD and modified in AwareHub failed to start on external release. Version AwareHub failed to start on external release of package/AwareServicePacks/AwareHubPluginsAwareService/Android.mk left in tree.
+Auto-merging package/AwareHubPlugins/AndroidManifest.xml
+CONFLICT (content): Merge conflict in package/AwareHubPlugins/AndroidManifest.xml
+Auto-merging package/AwareHub/AndroidManifest.xml
+CONFLICT (content): Merge conflict in package/AwareHub/AndroidManifest.xml
+Auto-merging json_utils/Android.mk
+CONFLICT (content): Merge conflict in json_utils/Android.mk
+Auto-merging core/Physical/libs/Android.mk
+CONFLICT (content): Merge conflict in core/Physical/libs/Android.mk
+Auto-merging core/Gesture/libgesture/Android.mk
+CONFLICT (content): Merge conflict in core/Gesture/libgesture/Android.mk
+CONFLICT (modify/delete): awarecsp/aware_csp_dataloopers/src/com/intel/aware/csp/datalooper/GestureFlickDataLooper.java deleted in HEAD and modified in AwareHub failed to start on external release. Version AwareHub failed to start on external release of awarecsp/aware_csp_dataloopers/src/com/intel/aware/csp/datalooper/GestureFlickDataLooper.java left in tree.
+Auto-merging Android.mk
+CONFLICT (content): Merge conflict in Android.mk
+Recorded preimage for 'package/AwareHub/AndroidManifest.xml'
+Recorded preimage for 'package/AwareHubPlugins/AndroidManifest.xml'
+Failed to merge in the changes.
+Patch failed at 0001 AwareHub failed to start on external release
+
+When you have resolved this problem run "git rebase --continue".
+If you would prefer to skip this patch, instead run "git rebase --skip".
+To check out the original branch and stop rebasing run "git rebase --abort".

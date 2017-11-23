@@ -1,0 +1,27 @@
+./moorefield/mofd_v0/config/init.mofd_v0.rc
+/home/hubingqu/r44c/vendor/intel/hardware/sensors/scalability
+/home/hubingqu/r44c/vendor/intel/hardware/libsensorhub
+/framework/base/policy/src/com/android/internal/policy/impl/WindowOrientationListener.java
+/home/hubingqu/main2/vendor/intel/hardware/libsensorhub
+./device/intel/moorefield/mofd_v0/config/sensors/sensor_hal_config_default.xml
+/home/bingquan/main/vendor/intel/apps/PRIVATE/Aware/virtualsensors
+./intel/moorefield/mofd_v1/config/init.mofd_v1.rc
+/home/bingquan/lenovo/r5_Kobe/vendor/intel/apps/PRIVATE/Aware
+
+/lenovo/r5_Kobe$ find . -name '*.mk' | xargs grep -i 'aware_bundle'
+./vendor/intel/apps/PRIVATE/Aware/Android.mk:#Create aware_bundle phony package
+./vendor/intel/apps/PRIVATE/Aware/Android.mk:LOCAL_MODULE := aware_bundle
+./device/intel/merrifield/saltbay/device.mk:    aware_bundle
+./device/intel/moorefield/kobe/device.mk:    aware_bundle
+./device/intel/moorefield/mofd_v1/device.mk:    aware_bundle
+
+./frameworks/base/services/core/jni/com_android_server_lights_LightsService.cpp
+device/intel/sofia_lte-kernel/i386/modules/
+vendor/intel/apps/hald/records/default/sensors_kxcj1013_accel.hrec
+/home/bingquan/sofia/m3/out/target/product/r2_sltmrdV34/system/etc/hald/hrec.d
+vendor/intel/apps/telephony/sarmanager/src/com/intel/internal/telephony/SARManager/AlwaysConnectedProxSensorInput.java
+
+http://opengrok-dswci.ndg.tl.intel.com/source/xref/ndg-android/frameworks/base/core/java/android/hardware/SystemSensorManager.java
+/home/bingquan/ndg-android/frameworks/native/services/sensorservice
+/home/bingquan/ndg-android/frameworks/base/core/jni
+android_hardware_SensorManager.cpp

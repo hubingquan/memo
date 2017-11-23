@@ -1,0 +1,9 @@
+ngquan@hubingqu-mobl1:~/main-ww31-b-clean$ nslookup mcg-psi-gcr-glb.sh.intel.com
+Server:		10.248.2.5
+Address:	10.248.2.5#53
+
+Name:	mcg-psi-gcr-glb.sh.intel.com
+Address: 10.239.146.17
+Name:	mcg-psi-gcr-glb.sh.intel.com
+Address: 10.239.144.17
+

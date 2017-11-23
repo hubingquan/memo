@@ -1,0 +1,34 @@
+./vendor/intel/robby/sensors/libsensors_iio_v3
+
+2024  sudo apt-get update
+2025  sudo apt-get install libQtCore4:i386 libqtgui4:i386
+
+Robby 2.5
+	no power key = input keyevent 26
+/home/bingquan/ndg-android/vendor/intel/robby/sensors/als
+
+https://source.android.com/devices/sensors/sensor-types.html
+
+adb shell input keyevent 82
+settings put system screen_off_timeout 600000
+
+#disable HW overlays
+service call SurfaceFlinger 1008 i32 1
+
+adb shell am broadcast -a com.google.android.clockwork.action.TEST_MODE ?
+
+
+Adb uninstall com.intel.sh.ndg.sensorTest
+
+adb shell am broadcast -a com.google.android.clockwork.action.TEST_MODE ?
+
+
+/home/bingquan/ndg-android/out/target/product/anthracite/obj/SHARED_LIBRARIES/libsensors_iio_v3.robby_intermediates
+adb push out/target/product/anthracite/system/lib/hw/libsensors_iio_v3.robby.so /system/lib/hw/
+am broadcast -a com.google.android.clockwork.action.TEST_MODE  
+
+Switch to test os
+Adb reboot bootloader
+Fastboot oem custom_boot 2
+Fastboot continue
+

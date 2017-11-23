@@ -1,0 +1,559 @@
+shell@mofd_v1:/ # dmesg
+<6>[ 3507.273582] bq24261_charger 8-006b: bq24261_handle_irq:1433 stat=0x32
+<6>[ 3507.273676] pmic_ccsm pmic_ccsm: Low-supply event received from external-charger
+<6>[ 3507.480652] pmic_ccsm pmic_ccsm: USB VBUS Removed. Notifying OTG driver
+<6>[ 3507.480735] pmic_ccsm pmic_ccsm: Notifying OTG ev:3, evt:4, chrg_type:1, mA:0
+<6>[ 3507.480823] process_cable_props: event:4, type:1, ma:0
+<6>[ 3507.481421] mtp_release
+<6>[ 3507.481541] android_work: sent uevent USB_STATE=DISCONNECTED
+<6>[ 3507.503730] bq24261_charger 8-006b: bq24261_handle_irq:1433 stat=0x32
+<6>[ 3507.503751] pmic_ccsm pmic_ccsm: Low-supply event received from external-charger
+<3>[ 3507.503758] pmic_ccsm pmic_ccsm: Ignore Low-supply event received
+<6>[ 3507.523130] pmic_ccsm pmic_ccsm: pmic_set_cc: Battery Zone:3
+<6>[ 3507.530856] pmic_ccsm pmic_ccsm: pmic_set_cv: Battery Zone:3
+<6>[ 3507.533899] max170xx_battery 2-0036: soc perc: soc: 100, offset: 1
+<6>[ 3507.536856] trigger_algo:Algo_status:3
+<6>[ 3507.623870] trigger_algo:Algo_status:2
+<14>[ 3507.687720] healthd: battery l=100 v=4278 t=29.0 h=2 st=3 c=0 chg=
+<6>[ 3507.758204] max170xx_battery 2-0036: size:a2
+<6>[ 3507.758231] max170xx_battery 2-0036: table_type:1
+<6>[ 3507.758238] max170xx_battery 2-0036: config_init:1
+<6>[ 3507.758244] max170xx_battery 2-0036: rcomp0:64
+<6>[ 3507.758249] max170xx_battery 2-0036: tempCo:202a
+<6>[ 3507.758255] max170xx_battery 2-0036: kempty0:100
+<6>[ 3507.758260] max170xx_battery 2-0036: full_cap:eb0
+<6>[ 3507.758266] max170xx_battery 2-0036: cycles:103
+<6>[ 3507.758271] max170xx_battery 2-0036: full_capnom:fcc
+<6>[ 3507.758276] max170xx_battery 2-0036: qrtbl00:3390
+<6>[ 3507.758282] max170xx_battery 2-0036: qrtbl10:1890
+<6>[ 3507.758287] max170xx_battery 2-0036: qrtbl20:b11
+<6>[ 3507.758293] max170xx_battery 2-0036: qrtbl30:891
+<6>[ 3507.758298] max170xx_battery 2-0036: full_soc_thr:5f00
+<6>[ 3507.758303] max170xx_battery 2-0036: vempty:acda
+<6>[ 3507.758309] max170xx_battery 2-0036: soc_empty:60
+<6>[ 3507.758314] max170xx_battery 2-0036: ichgt_term:2d0
+<6>[ 3507.758319] max170xx_battery 2-0036: design_cap:1018
+<6>[ 3507.758325] max170xx_battery 2-0036: etc:e0
+<6>[ 3507.758330] max170xx_battery 2-0036: rsense:1
+<6>[ 3507.758335] max170xx_battery 2-0036: cfg:2210
+<6>[ 3507.758341] max170xx_battery 2-0036: learn_cfg:2606
+<6>[ 3507.758346] max170xx_battery 2-0036: filter_cfg:87a6
+<6>[ 3507.758351] max170xx_battery 2-0036: relax_cfg:506b
+<6>[ 3507.758357] max170xx_battery 2-0036: a1b0, 
+<6>[ 3507.758362] max170xx_battery 2-0036: ae40, 
+<6>[ 3507.758367] max170xx_battery 2-0036: b220, 
+<6>[ 3507.758373] max170xx_battery 2-0036: b760, 
+<6>[ 3507.758378] max170xx_battery 2-0036: bb40, 
+<6>[ 3507.758383] max170xx_battery 2-0036: bbb0, 
+<6>[ 3507.758388] max170xx_battery 2-0036: bc20, 
+<6>[ 3507.758393] max170xx_battery 2-0036: bca0, 
+<6>[ 3507.759350] max170xx_battery 2-0036: bd30, 
+<6>[ 3507.759369] max170xx_battery 2-0036: be70, 
+<6>[ 3507.759375] max170xx_battery 2-0036: bfb0, 
+<6>[ 3507.759381] max170xx_battery 2-0036: c070, 
+<6>[ 3507.759386] max170xx_battery 2-0036: c600, 
+<6>[ 3507.759392] max170xx_battery 2-0036: cb10, 
+<6>[ 3507.759397] max170xx_battery 2-0036: d0c0, 
+<6>[ 3507.759402] max170xx_battery 2-0036: d820, 
+<6>[ 3507.759408] max170xx_battery 2-0036: 160, 
+<6>[ 3507.759413] max170xx_battery 2-0036: 890, 
+<6>[ 3507.759419] max170xx_battery 2-0036: 600, 
+<6>[ 3507.759424] max170xx_battery 2-0036: 800, 
+<6>[ 3507.759429] max170xx_battery 2-0036: 1900, 
+<6>[ 3507.759435] max170xx_battery 2-0036: 1900, 
+<6>[ 3507.759440] max170xx_battery 2-0036: 3610, 
+<6>[ 3507.759445] max170xx_battery 2-0036: 3000, 
+<6>[ 3507.759995] max170xx_battery 2-0036: d20, 
+<6>[ 3507.760010] max170xx_battery 2-0036: d20, 
+<6>[ 3507.760016] max170xx_battery 2-0036: cd0, 
+<6>[ 3507.760022] max170xx_battery 2-0036: 7f0, 
+<6>[ 3507.760027] max170xx_battery 2-0036: 860, 
+<6>[ 3507.760032] max170xx_battery 2-0036: 6f0, 
+<6>[ 3507.760038] max170xx_battery 2-0036: 5a0, 
+<6>[ 3507.760043] max170xx_battery 2-0036: 5a0, 
+<6>[ 3507.760048] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760054] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760059] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760064] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760070] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760075] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760693] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760708] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760714] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760720] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760725] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760730] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760736] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760741] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760746] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760751] max170xx_battery 2-0036: 100, 
+<6>[ 3507.760757] max170xx_battery 2-0036: 
+<14>[ 3507.766685] healthd: battery l=100 v=4278 t=30.0 h=2 st=3 c=-2 chg=
+<14>[ 3507.796933] healthd: battery l=100 v=4278 t=30.0 h=2 st=3 c=-2 chg=
+<5>[ 3507.810464] type=1400 audit(1409619670.840:11): avc:  denied  { getattr } for  pid=24013 comm="zygote" path="socket:[20393]" dev="sockfs" ino=20393 scontext=u:r:untrusted_app:s0 tcontext=u:r:zygote:s0 tclass=unix_stream_socket result=0
+<5>[ 3507.810566] type=1400 audit(1409619670.840:12): avc:  denied  { getopt } for  pid=24013 comm="zygote" path="/dev/socket/zygote" scontext=u:r:untrusted_app:s0 tcontext=u:r:zygote:s0 tclass=unix_stream_socket result=0
+<14>[ 3507.823717] healthd: battery l=100 v=4278 t=30.0 h=2 st=3 c=-2 chg=
+<5>[ 3507.900474] type=1400 audit(1409619670.930:13): avc:  denied  { getattr } for  pid=24027 comm="zygote" path="socket:[20393]" dev="sockfs" ino=20393 scontext=u:r:untrusted_app:s0 tcontext=u:r:zygote:s0 tclass=unix_stream_socket result=0
+<5>[ 3507.900580] type=1400 audit(1409619670.930:14): avc:  denied  { getopt } for  pid=24027 comm="zygote" path="/dev/socket/zygote" scontext=u:r:untrusted_app:s0 tcontext=u:r:zygote:s0 tclass=unix_stream_socket result=0
+<11>[ 3508.487011] init: untracked pid 23891 exited
+<6>[ 3510.697710] [mid_powerbtn] power button pressed
+<6>[ 3510.901018] [mid_powerbtn] power button released
+<6>[ 3511.350494] request_suspend_state: sleep (0->3) at 3512372099769 (2014-09-02 01:01:14.392097894 UTC)
+<6>[ 3511.350637] rmi4_ts 7-0020: Enter rmi4_suspend, touch counter=0, key counter=0
+<3>[ 3511.632730] [otm_hdmi]: hdcp: condition not ready, required 0, hpd 0
+<6>[ 3512.058860] PM: suspend entry 2014-09-02 01:01:15.100669641 UTC
+<6>[ 3512.058957] PM: Syncing filesystems ... done.
+<7>[ 3512.096870] PM: Preparing system for mem sleep
+<4>[ 3512.119230] Freezing user space processes ... 
+<6>[ 3512.119542] last active wakeup source: MMGR
+<4>[ 3512.119553] 
+<3>[ 3512.119560] Freezing of tasks aborted after 0.000 seconds (17 tasks refusing to freeze, wq_busy=0, wq_name=(null)):
+<4>[ 3512.119565] 
+<4>[ 3512.119569] Restarting tasks ... done.
+<6>[ 3512.120398] PM: suspend exit 2014-09-02 01:01:15.162254233 UTC
+<6>[ 3512.279960] PM: suspend entry 2014-09-02 01:01:15.321845496 UTC
+<6>[ 3512.280025] PM: Syncing filesystems ... done.
+<7>[ 3512.290704] PM: Preparing system for mem sleep
+<4>[ 3512.291206] Freezing user space processes ... 
+<6>[ 3512.291631] last active wakeup source: KeyEvents
+<4>[ 3512.291641] 
+<3>[ 3512.291648] Freezing of tasks aborted after 0.000 seconds (16 tasks refusing to freeze, wq_busy=0, wq_name=(null)):
+<4>[ 3512.291653] 
+<4>[ 3512.291657] Restarting tasks ... done.
+<6>[ 3512.292379] PM: suspend exit 2014-09-02 01:01:15.334285857 UTC
+<6>[ 3512.457045] PM: suspend entry 2014-09-02 01:01:15.498983718 UTC
+<6>[ 3512.457111] PM: Syncing filesystems ... done.
+<7>[ 3512.468232] PM: Preparing system for mem sleep
+<4>[ 3512.469578] Freezing user space processes ... (elapsed 0.001 seconds) done.
+<4>[ 3512.471621] Freezing remaining freezable tasks ... (elapsed 0.002 seconds) done.
+<7>[ 3512.474315] PM: Entering mem sleep
+<4>[ 3512.474960] Suspending console(s) (use no_console_suspend to debug)
+<4>[ 3512.545592] sep54: dx_sep_state_change_handler:90: State=0x00000008 Status/RetCode=0x00000000
+<4>[ 3512.546003] sep54: dx_sep_state_change_handler:90: State=0x00000400 Status/RetCode=0x00000000
+<6>[ 3512.546302] snd_intel_sst: runtime_resume called
+<3>[ 3512.559035] snd_merr_dpcm_wm8958: setting snd_soc_dai_set_tdm_slot
+<6>[ 3512.571080] snd_intel_sst: runtime_suspend called
+<4>[ 3512.571393] sep54: dx_sep_state_change_handler:90: State=0x00000800 Status/RetCode=0x00000000
+<4>[ 3512.571490] sep54: dx_sep_state_change_handler:90: State=0x00001000 Status/RetCode=0x00000000
+<6>[ 3512.572043] i2c_pmic_adap i2c_pmic_adap: pmic_i2c_suspend
+<6>[ 3512.572101] scove_thrm scove_thrm: suspend called.
+<6>[ 3512.572126] bcove_bcu bcove_bcu: Suspend called.
+<6>[ 3512.669181] PM: suspend of devices complete after 117.913 msecs
+<6>[ 3512.671566] PM: late suspend of devices complete after 2.367 msecs
+<6>[ 3512.675797] HSU serial 0000:00:04.0: Refused to change power state, currently in D0
+<6>[ 3512.686631] PM: noirq suspend of devices complete after 15.054 msecs
+<4>[ 3512.686640] Disabling non-boot CPUs ...
+<5>[ 3512.688777] Cannot set affinity for irq 270
+<6>[ 3512.690105] smpboot: CPU 1 is now offline
+<6>[ 3512.694763] smpboot: CPU 2 is now offline
+<6>[ 3512.698664] smpboot: CPU 3 is now offline
+<6>[ 3538.580376] wakeup from  IRQ 27
+<6>[ 3538.580401] IRQ 27,action name:i2c_pmic_adap
+<6>[ 3538.580780] Suspended for 26.000 seconds
+<6>[ 3538.581678] Enabling non-boot CPUs ...
+<6>[ 3538.581847] SMP alternatives: lockdep: fixing up alternatives
+<6>[ 3538.581859] smpboot: Booting Node 0 Processor 1 APIC 0x2
+<6>[ 3538.582686] bq24261_charger 8-006b: bq24261_handle_irq:1433 stat=0x32
+<6>[ 3538.582700] pmic_ccsm pmic_ccsm: Low-supply event received from external-charger
+<3>[ 3538.582709] pmic_ccsm pmic_ccsm: Ignore Low-supply event received
+<6>[ 3538.593427] Skipped synchronization checks as TSC is reliable.
+<6>[ 3538.594904] CPU1 is up
+<6>[ 3538.595042] SMP alternatives: lockdep: fixing up alternatives
+<6>[ 3538.595054] smpboot: Booting Node 0 Processor 2 APIC 0x4
+<6>[ 3538.606312] Skipped synchronization checks as TSC is reliable.
+<6>[ 3538.607766] Num p-states 23
+<6>[ 3538.607778] State [0]: core_frequency[2333] transition_latency[100] control[0x1c4f]
+<6>[ 3538.607785] State [1]: core_frequency[2250] transition_latency[100] control[0x1b4d]
+<6>[ 3538.607793] State [2]: core_frequency[2166] transition_latency[100] control[0x1a4b]
+<6>[ 3538.607800] State [3]: core_frequency[2083] transition_latency[100] control[0x1949]
+<6>[ 3538.607807] State [4]: core_frequency[2000] transition_latency[100] control[0x1847]
+<6>[ 3538.607814] State [5]: core_frequency[1916] transition_latency[100] control[0x1745]
+<6>[ 3538.607821] State [6]: core_frequency[1833] transition_latency[100] control[0x1643]
+<6>[ 3538.607828] State [7]: core_frequency[1750] transition_latency[100] control[0x1541]
+<6>[ 3538.607835] State [8]: core_frequency[1666] transition_latency[100] control[0x143f]
+<6>[ 3538.607843] State [9]: core_frequency[1583] transition_latency[100] control[0x133d]
+<6>[ 3538.607850] State [10]: core_frequency[1500] transition_latency[100] control[0x123b]
+<6>[ 3538.607857] State [11]: core_frequency[1416] transition_latency[100] control[0x1139]
+<6>[ 3538.607864] State [12]: core_frequency[1333] transition_latency[100] control[0x1036]
+<6>[ 3538.607871] State [13]: core_frequency[1250] transition_latency[100] control[0xf36]
+<6>[ 3538.607879] State [14]: core_frequency[1166] transition_latency[100] control[0xe35]
+<6>[ 3538.607886] State [15]: core_frequency[1083] transition_latency[100] control[0xd34]
+<6>[ 3538.607893] State [16]: core_frequency[1000] transition_latency[100] control[0xc33]
+<6>[ 3538.607900] State [17]: core_frequency[916] transition_latency[100] control[0xb33]
+<6>[ 3538.607907] State [18]: core_frequency[833] transition_latency[100] control[0xa32]
+<6>[ 3538.607914] State [19]: core_frequency[750] transition_latency[100] control[0x931]
+<6>[ 3538.607921] State [20]: core_frequency[666] transition_latency[100] control[0x830]
+<6>[ 3538.607928] State [21]: core_frequency[583] transition_latency[100] control[0x730]
+<6>[ 3538.607935] State [22]: core_frequency[500] transition_latency[100] control[0x62f]
+<6>[ 3538.608027] CPU2 is up
+<6>[ 3538.608158] SMP alternatives: lockdep: fixing up alternatives
+<6>[ 3538.608169] smpboot: Booting Node 0 Processor 3 APIC 0x6
+<6>[ 3538.619412] Skipped synchronization checks as TSC is reliable.
+<6>[ 3538.619885] CPU3 is up
+<4>[ 3538.632931] ------------[ cut here ]------------
+<4>[ 3538.632944] WARNING: at ../../../../../../linux/kernel/arch/x86/platform/intel-mid/intel_soc_pmu.c:1569 pmu_pci_set_power_state+0x34c/0x880()
+<4>[ 3538.632971] Modules linked in: dfrgx snd_merr_dpcm_wm8958 snd_moor_dpcm_florida snd_intel_sst snd_soc_sst_platform snd_soc_wm8994 snd_soc_florida snd_soc_wm_hubs snd_soc_wm_adsp snd_soc_arizona arizona_i2c lm3559 imx1x5 atomisp_css2401a0_v21 libmsrlisthelper rmi4 bcm_bt_lpm videobuf_vmalloc videobuf_core fps_throttle hdmi_audio pn544(O) tngdisp bcm4335(O) cfg80211
+<4>[ 3538.632975] CPU: 0 PID: 152 Comm: kworker/u8:2 Tainted: G           O 3.10.20-x86_64_moor-264357-gcf9c143 #1
+<4>[ 3538.632982] Workqueue: auto_suspend try_to_suspend
+<4>[ 3538.632988]  0000000000000009 ffff880007b6fb28 ffffffff82808097 ffff880007b6fb60
+<4>[ 3538.632992]  ffffffff820b0c21 ffff88007b5a0000 0000000000000007 0000000000000000
+<4>[ 3538.632996]  0000000000000000 0000000000000000 ffff880007b6fb70 ffffffff820b0c5a
+<4>[ 3538.632997] Call Trace:
+<4>[ 3538.633005]  [<ffffffff82808097>] dump_stack+0x19/0x1b
+<4>[ 3538.633010]  [<ffffffff820b0c21>] warn_slowpath_common+0x61/0x80
+<4>[ 3538.633013]  [<ffffffff820b0c5a>] warn_slowpath_null+0x1a/0x20
+<4>[ 3538.633016]  [<ffffffff827f1e9c>] pmu_pci_set_power_state+0x34c/0x880
+<4>[ 3538.633021]  [<ffffffff820e6d2d>] ? get_parent_ip+0xd/0x50
+<4>[ 3538.633024]  [<ffffffff820e6d2d>] ? get_parent_ip+0xd/0x50
+<4>[ 3538.633029]  [<ffffffff823810a3>] pci_power_up+0x33/0x70
+<4>[ 3538.633033]  [<ffffffff82383077>] pci_pm_resume_noirq+0x27/0xb0
+<4>[ 3538.633036]  [<ffffffff82383050>] ? pci_pm_suspend+0x1e0/0x1e0
+<4>[ 3538.633041]  [<ffffffff8241c08e>] dpm_run_callback+0x4e/0x80
+<4>[ 3538.633044]  [<ffffffff8241c53b>] dpm_resume_noirq+0xfb/0x330
+<4>[ 3538.633047]  [<ffffffff8241cac1>] dpm_resume_start+0x11/0x20
+<4>[ 3538.633051]  [<ffffffff820fe22b>] suspend_devices_and_enter+0x1eb/0x490
+<4>[ 3538.633054]  [<ffffffff820b2c12>] ? console_unlock+0x202/0x460
+<4>[ 3538.633058]  [<ffffffff820fe76c>] pm_suspend+0x29c/0x2c0
+<4>[ 3538.633061]  [<ffffffff820ff125>] try_to_suspend+0xb5/0xd0
+<4>[ 3538.633064]  [<ffffffff820d1772>] process_one_work+0x1e2/0x570
+<4>[ 3538.633067]  [<ffffffff820d1709>] ? process_one_work+0x179/0x570
+<4>[ 3538.633070]  [<ffffffff820d1f73>] worker_thread+0x123/0x380
+<4>[ 3538.633073]  [<ffffffff820d1e50>] ? rescuer_thread+0x310/0x310
+<4>[ 3538.633077]  [<ffffffff820d8f2b>] kthread+0xeb/0xf0
+<4>[ 3538.633082]  [<ffffffff820d8e40>] ? kthread_create_on_node+0x140/0x140
+<4>[ 3538.633086]  [<ffffffff82815cdc>] ret_from_fork+0x7c/0xb0
+<4>[ 3538.633089]  [<ffffffff820d8e40>] ? kthread_create_on_node+0x140/0x140
+<4>[ 3538.633092] ---[ end trace b40dda966f87c8fd ]---
+<6>[ 3538.633513] PM: noirq resume of devices complete after 12.914 msecs
+<7>[ 3538.633517] Wakeup from IRQ 1 soc_thrm
+<7>[ 3538.633557] Wakeup from IRQ 33 sep54
+<6>[ 3538.634179] PM: early resume of devices complete after 0.518 msecs
+<6>[ 3538.634525] bcove_bcu bcove_bcu: Resume called.
+<6>[ 3538.634531] scove_thrm scove_thrm: resume called.
+<6>[ 3538.634540] i2c_pmic_adap i2c_pmic_adap: pmic_i2c_resume
+<6>[ 3538.634645] snd_intel_sst: runtime_resume called
+<4>[ 3538.634661] sep54: dx_sep_state_change_handler:90: State=0x00000400 Status/RetCode=0x00000000
+<6>[ 3538.682210] max170xx_battery 2-0036: soc perc: soc: 99, offset: 1
+<6>[ 3538.685085] trigger_algo:Algo_status:2
+<6>[ 3538.713538] PM: resume of devices complete after 79.371 msecs
+<6>[ 3538.742539] trigger_algo:Algo_status:2
+<7>[ 3538.775006] PM: Finishing wakeup.
+<6>[ 3538.777002] snd_intel_sst: runtime_idle called
+<6>[ 3538.777044] snd_intel_sst: runtime_suspend called
+<4>[ 3538.777640] sep54: dx_sep_state_change_handler:90: State=0x00000800 Status/RetCode=0x00000000
+<4>[ 3538.775029] Restarting tasks ... done.
+<6>[ 3538.789331] PM: suspend exit 2014-09-02 01:01:41.208544953 UTC
+<14>[ 3538.862211] healthd: battery l=100 v=4278 t=29.0 h=2 st=3 c=-29 chg=
+<14>[ 3538.890954] healthd: battery l=100 v=4278 t=29.0 h=2 st=3 c=-31 chg=
+<14>[ 3538.920493] healthd: battery l=100 v=4278 t=29.0 h=2 st=3 c=-31 chg=
+<6>[ 3539.238652] PM: suspend entry 2014-09-02 01:01:41.657983634 UTC
+<6>[ 3539.238700] PM: Syncing filesystems ... done.
+<7>[ 3539.265027] PM: Preparing system for mem sleep
+<4>[ 3539.266277] Freezing user space processes ... (elapsed 0.002 seconds) done.
+<4>[ 3539.268415] Freezing remaining freezable tasks ... (elapsed 0.002 seconds) done.
+<7>[ 3539.271025] PM: Entering mem sleep
+<4>[ 3539.271488] Suspending console(s) (use no_console_suspend to debug)
+<4>[ 3539.346079] sep54: dx_sep_state_change_handler:90: State=0x00000008 Status/RetCode=0x00000000
+<4>[ 3539.346440] sep54: dx_sep_state_change_handler:90: State=0x00000400 Status/RetCode=0x00000000
+<6>[ 3539.346770] snd_intel_sst: runtime_resume called
+<3>[ 3539.359983] snd_merr_dpcm_wm8958: setting snd_soc_dai_set_tdm_slot
+<6>[ 3539.370398] snd_intel_sst: runtime_suspend called
+<4>[ 3539.370684] sep54: dx_sep_state_change_handler:90: State=0x00000800 Status/RetCode=0x00000000
+<6>[ 3539.370751] i2c_pmic_adap i2c_pmic_adap: pmic_i2c_suspend
+<4>[ 3539.370781] sep54: dx_sep_state_change_handler:90: State=0x00001000 Status/RetCode=0x00000000
+<6>[ 3539.370797] scove_thrm scove_thrm: suspend called.
+<6>[ 3539.370820] bcove_bcu bcove_bcu: Suspend called.
+<6>[ 3539.469826] PM: suspend of devices complete after 118.187 msecs
+<6>[ 3539.472068] PM: late suspend of devices complete after 2.226 msecs
+<6>[ 3539.487119] PM: noirq suspend of devices complete after 15.039 msecs
+<4>[ 3539.487128] Disabling non-boot CPUs ...
+<6>[ 3539.490558] smpboot: CPU 1 is now offline
+<6>[ 3539.495118] smpboot: CPU 2 is now offline
+<6>[ 3539.498861] smpboot: CPU 3 is now offline
+<6>[ 3542.176990] wakeup from  IRQ 8
+<6>[ 3542.177015] IRQ 8,action name:rtc0
+<6>[ 3542.177397] Suspended for 3.000 seconds
+<6>[ 3542.177780] Enabling non-boot CPUs ...
+<6>[ 3542.177954] SMP alternatives: lockdep: fixing up alternatives
+<6>[ 3542.177966] smpboot: Booting Node 0 Processor 1 APIC 0x2
+<6>[ 3542.189231] Skipped synchronization checks as TSC is reliable.
+<6>[ 3542.190692] CPU1 is up
+<6>[ 3542.190830] SMP alternatives: lockdep: fixing up alternatives
+<6>[ 3542.190842] smpboot: Booting Node 0 Processor 2 APIC 0x4
+<6>[ 3542.202194] Skipped synchronization checks as TSC is reliable.
+<6>[ 3542.203647] Num p-states 23
+<6>[ 3542.203658] State [0]: core_frequency[2333] transition_latency[100] control[0x1c4f]
+<6>[ 3542.203666] State [1]: core_frequency[2250] transition_latency[100] control[0x1b4d]
+<6>[ 3542.203673] State [2]: core_frequency[2166] transition_latency[100] control[0x1a4b]
+<6>[ 3542.203680] State [3]: core_frequency[2083] transition_latency[100] control[0x1949]
+<6>[ 3542.203687] State [4]: core_frequency[2000] transition_latency[100] control[0x1847]
+<6>[ 3542.203695] State [5]: core_frequency[1916] transition_latency[100] control[0x1745]
+<6>[ 3542.203702] State [6]: core_frequency[1833] transition_latency[100] control[0x1643]
+<6>[ 3542.203709] State [7]: core_frequency[1750] transition_latency[100] control[0x1541]
+<6>[ 3542.203716] State [8]: core_frequency[1666] transition_latency[100] control[0x143f]
+<6>[ 3542.203723] State [9]: core_frequency[1583] transition_latency[100] control[0x133d]
+<6>[ 3542.203731] State [10]: core_frequency[1500] transition_latency[100] control[0x123b]
+<6>[ 3542.203738] State [11]: core_frequency[1416] transition_latency[100] control[0x1139]
+<6>[ 3542.203745] State [12]: core_frequency[1333] transition_latency[100] control[0x1036]
+<6>[ 3542.203752] State [13]: core_frequency[1250] transition_latency[100] control[0xf36]
+<6>[ 3542.203760] State [14]: core_frequency[1166] transition_latency[100] control[0xe35]
+<6>[ 3542.203767] State [15]: core_frequency[1083] transition_latency[100] control[0xd34]
+<6>[ 3542.203774] State [16]: core_frequency[1000] transition_latency[100] control[0xc33]
+<6>[ 3542.203781] State [17]: core_frequency[916] transition_latency[100] control[0xb33]
+<6>[ 3542.203789] State [18]: core_frequency[833] transition_latency[100] control[0xa32]
+<6>[ 3542.203796] State [19]: core_frequency[750] transition_latency[100] control[0x931]
+<6>[ 3542.203803] State [20]: core_frequency[666] transition_latency[100] control[0x830]
+<6>[ 3542.203810] State [21]: core_frequency[583] transition_latency[100] control[0x730]
+<6>[ 3542.203817] State [22]: core_frequency[500] transition_latency[100] control[0x62f]
+<6>[ 3542.203912] CPU2 is up
+<6>[ 3542.204040] SMP alternatives: lockdep: fixing up alternatives
+<6>[ 3542.204052] smpboot: Booting Node 0 Processor 3 APIC 0x6
+<6>[ 3542.215287] Skipped synchronization checks as TSC is reliable.
+<6>[ 3542.215752] CPU3 is up
+<4>[ 3542.228880] ------------[ cut here ]------------
+<4>[ 3542.228892] WARNING: at ../../../../../../linux/kernel/arch/x86/platform/intel-mid/intel_soc_pmu.c:1569 pmu_pci_set_power_state+0x34c/0x880()
+<4>[ 3542.228919] Modules linked in: dfrgx snd_merr_dpcm_wm8958 snd_moor_dpcm_florida snd_intel_sst snd_soc_sst_platform snd_soc_wm8994 snd_soc_florida snd_soc_wm_hubs snd_soc_wm_adsp snd_soc_arizona arizona_i2c lm3559 imx1x5 atomisp_css2401a0_v21 libmsrlisthelper rmi4 bcm_bt_lpm videobuf_vmalloc videobuf_core fps_throttle hdmi_audio pn544(O) tngdisp bcm4335(O) cfg80211
+<4>[ 3542.228923] CPU: 0 PID: 152 Comm: kworker/u8:2 Tainted: G        W  O 3.10.20-x86_64_moor-264357-gcf9c143 #1
+<4>[ 3542.228930] Workqueue: auto_suspend try_to_suspend
+<4>[ 3542.228936]  0000000000000009 ffff880007b6fb28 ffffffff82808097 ffff880007b6fb60
+<4>[ 3542.228940]  ffffffff820b0c21 ffff88007b5a0000 0000000000000007 0000000000000000
+<4>[ 3542.228944]  0000000000000000 0000000000000000 ffff880007b6fb70 ffffffff820b0c5a
+<4>[ 3542.228945] Call Trace:
+<4>[ 3542.228953]  [<ffffffff82808097>] dump_stack+0x19/0x1b
+<4>[ 3542.228957]  [<ffffffff820b0c21>] warn_slowpath_common+0x61/0x80
+<4>[ 3542.228961]  [<ffffffff820b0c5a>] warn_slowpath_null+0x1a/0x20
+<4>[ 3542.228964]  [<ffffffff827f1e9c>] pmu_pci_set_power_state+0x34c/0x880
+<4>[ 3542.228968]  [<ffffffff820e6d2d>] ? get_parent_ip+0xd/0x50
+<4>[ 3542.228971]  [<ffffffff820e6d2d>] ? get_parent_ip+0xd/0x50
+<4>[ 3542.228977]  [<ffffffff823810a3>] pci_power_up+0x33/0x70
+<4>[ 3542.228981]  [<ffffffff82383077>] pci_pm_resume_noirq+0x27/0xb0
+<4>[ 3542.228984]  [<ffffffff82383050>] ? pci_pm_suspend+0x1e0/0x1e0
+<4>[ 3542.228989]  [<ffffffff8241c08e>] dpm_run_callback+0x4e/0x80
+<4>[ 3542.228992]  [<ffffffff8241c53b>] dpm_resume_noirq+0xfb/0x330
+<4>[ 3542.228995]  [<ffffffff8241cac1>] dpm_resume_start+0x11/0x20
+<4>[ 3542.228999]  [<ffffffff820fe22b>] suspend_devices_and_enter+0x1eb/0x490
+<4>[ 3542.229002]  [<ffffffff820b2c12>] ? console_unlock+0x202/0x460
+<4>[ 3542.229005]  [<ffffffff820fe76c>] pm_suspend+0x29c/0x2c0
+<4>[ 3542.229009]  [<ffffffff820ff125>] try_to_suspend+0xb5/0xd0
+<4>[ 3542.229012]  [<ffffffff820d1772>] process_one_work+0x1e2/0x570
+<4>[ 3542.229015]  [<ffffffff820d1709>] ? process_one_work+0x179/0x570
+<4>[ 3542.229018]  [<ffffffff820d1f73>] worker_thread+0x123/0x380
+<4>[ 3542.229021]  [<ffffffff820d1e50>] ? rescuer_thread+0x310/0x310
+<4>[ 3542.229025]  [<ffffffff820d8f2b>] kthread+0xeb/0xf0
+<4>[ 3542.229030]  [<ffffffff820d8e40>] ? kthread_create_on_node+0x140/0x140
+<4>[ 3542.229034]  [<ffffffff82815cdc>] ret_from_fork+0x7c/0xb0
+<4>[ 3542.229037]  [<ffffffff820d8e40>] ? kthread_create_on_node+0x140/0x140
+<4>[ 3542.229039] ---[ end trace b40dda966f87c8fe ]---
+<6>[ 3542.229462] PM: noirq resume of devices complete after 12.923 msecs
+<7>[ 3542.229466] Wakeup from IRQ 1 soc_thrm
+<7>[ 3542.229475] Wakeup from IRQ 8 rtc0
+<7>[ 3542.229643] Wakeup from IRQ 33 sep54
+<6>[ 3542.230283] PM: early resume of devices complete after 0.535 msecs
+<6>[ 3542.230600] bcove_bcu bcove_bcu: Resume called.
+<6>[ 3542.230606] scove_thrm scove_thrm: resume called.
+<6>[ 3542.230615] i2c_pmic_adap i2c_pmic_adap: pmic_i2c_resume
+<6>[ 3542.230751] snd_intel_sst: runtime_resume called
+<4>[ 3542.230766] sep54: dx_sep_state_change_handler:90: State=0x00000400 Status/RetCode=0x00000000
+<6>[ 3542.280249] max170xx_battery 2-0036: soc perc: soc: 99, offset: 1
+<6>[ 3542.309630] PM: resume of devices complete after 79.357 msecs
+<7>[ 3542.370201] PM: Finishing wakeup.
+<4>[ 3542.370222] Restarting tasks ... done.
+<6>[ 3542.375623] PM: suspend exit 2014-09-02 01:01:45.198201973 UTC
+<6>[ 3542.376162] snd_intel_sst: runtime_idle called
+<6>[ 3542.376211] snd_intel_sst: runtime_suspend called
+<4>[ 3542.381481] sep54: dx_sep_state_change_handler:90: State=0x00000800 Status/RetCode=0x00000000
+<4>[ 3542.381573] sep54: dx_sep_state_change_handler:90: State=0x00001000 Status/RetCode=0x00000000
+<14>[ 3542.388615] healthd: battery l=100 v=4278 t=29.0 h=2 st=3 c=-33 chg=
+<6>[ 3547.418915] PM: suspend entry 2014-09-02 01:01:50.243005926 UTC
+<6>[ 3547.418981] PM: Syncing filesystems ... done.
+<7>[ 3547.452464] PM: Preparing system for mem sleep
+<4>[ 3547.453393] Freezing user space processes ... (elapsed 0.001 seconds) done.
+<4>[ 3547.455227] Freezing remaining freezable tasks ... (elapsed 0.001 seconds) done.
+<7>[ 3547.456727] PM: Entering mem sleep
+<4>[ 3547.457019] Suspending console(s) (use no_console_suspend to debug)
+<4>[ 3547.521966] sep54: dx_sep_state_change_handler:90: State=0x00000008 Status/RetCode=0x00000000
+<4>[ 3547.522486] sep54: dx_sep_state_change_handler:90: State=0x00000400 Status/RetCode=0x00000000
+<6>[ 3547.522898] snd_intel_sst: runtime_resume called
+<3>[ 3547.546800] snd_merr_dpcm_wm8958: setting snd_soc_dai_set_tdm_slot
+<6>[ 3547.556974] snd_intel_sst: runtime_suspend called
+<4>[ 3547.557337] sep54: dx_sep_state_change_handler:90: State=0x00000800 Status/RetCode=0x00000000
+<4>[ 3547.557421] sep54: dx_sep_state_change_handler:90: State=0x00001000 Status/RetCode=0x00000000
+<6>[ 3547.559257] i2c_pmic_adap i2c_pmic_adap: pmic_i2c_suspend
+<6>[ 3547.559291] scove_thrm scove_thrm: suspend called.
+<6>[ 3547.559309] bcove_bcu bcove_bcu: Suspend called.
+<6>[ 3547.655120] PM: suspend of devices complete after 115.940 msecs
+<6>[ 3547.657359] PM: late suspend of devices complete after 2.223 msecs
+<6>[ 3547.672349] PM: noirq suspend of devices complete after 14.978 msecs
+<4>[ 3547.672358] Disabling non-boot CPUs ...
+<6>[ 3547.675588] smpboot: CPU 1 is now offline
+<6>[ 3547.680173] smpboot: CPU 2 is now offline
+<6>[ 3547.683888] smpboot: CPU 3 is now offline
+<6>[ 3560.825672] wakeup from  IRQ 27
+<6>[ 3560.825696] IRQ 27,action name:i2c_pmic_adap
+<6>[ 3560.826077] Suspended for 13.000 seconds
+<6>[ 3560.826891] pmic_ccsm pmic_ccsm: CHGRIRQ0=80 SCHGRIRQ0=1 CHGRIRQ1=1 SCHGRIRQ1=15
+<3>[ 3560.826903] pmic_ccsm pmic_ccsm: Battery temperature zone changed
+<6>[ 3560.827039] Enabling non-boot CPUs ...
+<6>[ 3560.827209] SMP alternatives: lockdep: fixing up alternatives
+<6>[ 3560.827220] smpboot: Booting Node 0 Processor 1 APIC 0x2
+<6>[ 3560.838608] Skipped synchronization checks as TSC is reliable.
+<6>[ 3560.840064] CPU1 is up
+<6>[ 3560.840203] SMP alternatives: lockdep: fixing up alternatives
+<6>[ 3560.840214] smpboot: Booting Node 0 Processor 2 APIC 0x4
+<6>[ 3560.851735] Skipped synchronization checks as TSC is reliable.
+<6>[ 3560.853170] Num p-states 23
+<6>[ 3560.853181] State [0]: core_frequency[2333] transition_latency[100] control[0x1c4f]
+<6>[ 3560.853189] State [1]: core_frequency[2250] transition_latency[100] control[0x1b4d]
+<6>[ 3560.853196] State [2]: core_frequency[2166] transition_latency[100] control[0x1a4b]
+<6>[ 3560.853203] State [3]: core_frequency[2083] transition_latency[100] control[0x1949]
+<6>[ 3560.853210] State [4]: core_frequency[2000] transition_latency[100] control[0x1847]
+<6>[ 3560.853217] State [5]: core_frequency[1916] transition_latency[100] control[0x1745]
+<6>[ 3560.853224] State [6]: core_frequency[1833] transition_latency[100] control[0x1643]
+<6>[ 3560.853232] State [7]: core_frequency[1750] transition_latency[100] control[0x1541]
+<6>[ 3560.853239] State [8]: core_frequency[1666] transition_latency[100] control[0x143f]
+<6>[ 3560.853246] State [9]: core_frequency[1583] transition_latency[100] control[0x133d]
+<6>[ 3560.853253] State [10]: core_frequency[1500] transition_latency[100] control[0x123b]
+<6>[ 3560.853260] State [11]: core_frequency[1416] transition_latency[100] control[0x1139]
+<6>[ 3560.853267] State [12]: core_frequency[1333] transition_latency[100] control[0x1036]
+<6>[ 3560.853275] State [13]: core_frequency[1250] transition_latency[100] control[0xf36]
+<6>[ 3560.853282] State [14]: core_frequency[1166] transition_latency[100] control[0xe35]
+<6>[ 3560.853289] State [15]: core_frequency[1083] transition_latency[100] control[0xd34]
+<6>[ 3560.853296] State [16]: core_frequency[1000] transition_latency[100] control[0xc33]
+<6>[ 3560.853303] State [17]: core_frequency[916] transition_latency[100] control[0xb33]
+<6>[ 3560.853310] State [18]: core_frequency[833] transition_latency[100] control[0xa32]
+<6>[ 3560.853317] State [19]: core_frequency[750] transition_latency[100] control[0x931]
+<6>[ 3560.853324] State [20]: core_frequency[666] transition_latency[100] control[0x830]
+<6>[ 3560.853331] State [21]: core_frequency[583] transition_latency[100] control[0x730]
+<6>[ 3560.853338] State [22]: core_frequency[500] transition_latency[100] control[0x62f]
+<6>[ 3560.853431] CPU2 is up
+<6>[ 3560.853563] SMP alternatives: lockdep: fixing up alternatives
+<6>[ 3560.853574] smpboot: Booting Node 0 Processor 3 APIC 0x6
+<6>[ 3560.864810] Skipped synchronization checks as TSC is reliable.
+<6>[ 3560.865418] CPU3 is up
+<6>[ 3560.874330] bq24261_charger 8-006b: bq24261_handle_irq:1433 stat=0x32
+<6>[ 3560.874334] pmic_ccsm pmic_ccsm: Low-supply event received from external-charger
+<3>[ 3560.874336] pmic_ccsm pmic_ccsm: Ignore Low-supply event received
+<4>[ 3560.878525] ------------[ cut here ]------------
+<4>[ 3560.878535] WARNING: at ../../../../../../linux/kernel/arch/x86/platform/intel-mid/intel_soc_pmu.c:1569 pmu_pci_set_power_state+0x34c/0x880()
+<4>[ 3560.878564] Modules linked in: dfrgx snd_merr_dpcm_wm8958 snd_moor_dpcm_florida snd_intel_sst snd_soc_sst_platform snd_soc_wm8994 snd_soc_florida snd_soc_wm_hubs snd_soc_wm_adsp snd_soc_arizona arizona_i2c lm3559 imx1x5 atomisp_css2401a0_v21 libmsrlisthelper rmi4 bcm_bt_lpm videobuf_vmalloc videobuf_core fps_throttle hdmi_audio pn544(O) tngdisp bcm4335(O) cfg80211
+<4>[ 3560.878568] CPU: 1 PID: 152 Comm: kworker/u8:2 Tainted: G        W  O 3.10.20-x86_64_moor-264357-gcf9c143 #1
+<4>[ 3560.878576] Workqueue: auto_suspend try_to_suspend
+<4>[ 3560.878581]  0000000000000009 ffff880007b6fb28 ffffffff82808097 ffff880007b6fb60
+<4>[ 3560.878586]  ffffffff820b0c21 ffff88007b5a0000 0000000000000007 0000000000000000
+<4>[ 3560.878590]  0000000000000000 0000000000000000 ffff880007b6fb70 ffffffff820b0c5a
+<4>[ 3560.878591] Call Trace:
+<4>[ 3560.878598]  [<ffffffff82808097>] dump_stack+0x19/0x1b
+<4>[ 3560.878603]  [<ffffffff820b0c21>] warn_slowpath_common+0x61/0x80
+<4>[ 3560.878606]  [<ffffffff820b0c5a>] warn_slowpath_null+0x1a/0x20
+<4>[ 3560.878610]  [<ffffffff827f1e9c>] pmu_pci_set_power_state+0x34c/0x880
+<4>[ 3560.878614]  [<ffffffff820e6d2d>] ? get_parent_ip+0xd/0x50
+<4>[ 3560.878617]  [<ffffffff820e6d2d>] ? get_parent_ip+0xd/0x50
+<4>[ 3560.878623]  [<ffffffff823810a3>] pci_power_up+0x33/0x70
+<4>[ 3560.878626]  [<ffffffff82383077>] pci_pm_resume_noirq+0x27/0xb0
+<4>[ 3560.878630]  [<ffffffff82383050>] ? pci_pm_suspend+0x1e0/0x1e0
+<4>[ 3560.878634]  [<ffffffff8241c08e>] dpm_run_callback+0x4e/0x80
+<4>[ 3560.878637]  [<ffffffff8241c53b>] dpm_resume_noirq+0xfb/0x330
+<4>[ 3560.878640]  [<ffffffff8241cac1>] dpm_resume_start+0x11/0x20
+<4>[ 3560.878644]  [<ffffffff820fe22b>] suspend_devices_and_enter+0x1eb/0x490
+<4>[ 3560.878647]  [<ffffffff820b2c12>] ? console_unlock+0x202/0x460
+<4>[ 3560.878651]  [<ffffffff820fe76c>] pm_suspend+0x29c/0x2c0
+<4>[ 3560.878654]  [<ffffffff820ff125>] try_to_suspend+0xb5/0xd0
+<4>[ 3560.878658]  [<ffffffff820d1772>] process_one_work+0x1e2/0x570
+<4>[ 3560.878660]  [<ffffffff820d1709>] ? process_one_work+0x179/0x570
+<4>[ 3560.878664]  [<ffffffff820d1f73>] worker_thread+0x123/0x380
+<4>[ 3560.878667]  [<ffffffff820d1e50>] ? rescuer_thread+0x310/0x310
+<4>[ 3560.878671]  [<ffffffff820d8f2b>] kthread+0xeb/0xf0
+<4>[ 3560.878675]  [<ffffffff820d8e40>] ? kthread_create_on_node+0x140/0x140
+<4>[ 3560.878679]  [<ffffffff82815cdc>] ret_from_fork+0x7c/0xb0
+<4>[ 3560.878682]  [<ffffffff820d8e40>] ? kthread_create_on_node+0x140/0x140
+<4>[ 3560.878685] ---[ end trace b40dda966f87c8ff ]---
+<6>[ 3560.879107] PM: noirq resume of devices complete after 12.976 msecs
+<7>[ 3560.879111] Wakeup from IRQ 1 soc_thrm
+<7>[ 3560.879151] Wakeup from IRQ 33 sep54
+<6>[ 3560.879785] PM: early resume of devices complete after 0.529 msecs
+<6>[ 3560.880547] snd_intel_sst: runtime_resume called
+<4>[ 3560.880570] sep54: dx_sep_state_change_handler:90: State=0x00000400 Status/RetCode=0x00000000
+<6>[ 3560.883712] bcove_bcu bcove_bcu: Resume called.
+<6>[ 3560.883717] scove_thrm scove_thrm: resume called.
+<6>[ 3560.883727] i2c_pmic_adap i2c_pmic_adap: pmic_i2c_resume
+<6>[ 3560.885279] pmic_ccsm pmic_ccsm: Battery Zone changed. Current zone:7, temp:29
+<6>[ 3560.885287] pmic_ccsm pmic_ccsm: USB VBUS Detected. Notifying OTG driver
+<6>[ 3560.885424] pmic_ccsm pmic_ccsm: Read USBSRCDETSTATUS val: 81
+<6>[ 3560.886013] max170xx_battery 2-0036: soc perc: soc: 99, offset: 1
+<6>[ 3560.914908] trigger_algo:Algo_status:2
+<6>[ 3560.948716] max170xx_battery 2-0036: soc perc: soc: 99, offset: 1
+<6>[ 3560.959093] PM: resume of devices complete after 79.322 msecs
+<6>[ 3560.971412] trigger_algo:Algo_status:2
+<7>[ 3561.017217] PM: Finishing wakeup.
+<4>[ 3561.017241] Restarting tasks ... done.
+<6>[ 3561.022535] snd_intel_sst: runtime_idle called
+<6>[ 3561.022576] snd_intel_sst: runtime_suspend called
+<4>[ 3561.023051] sep54: dx_sep_state_change_handler:90: State=0x00000800 Status/RetCode=0x00000000
+<4>[ 3561.023130] sep54: dx_sep_state_change_handler:90: State=0x00001000 Status/RetCode=0x00000000
+<6>[ 3561.026656] PM: suspend exit 2014-09-02 01:02:03.200556684 UTC
+<14>[ 3561.090328] healthd: battery l=100 v=4278 t=29.0 h=2 st=3 c=-34 chg=
+<6>[ 3561.095582] pmic_ccsm pmic_ccsm: Read USBSRCDETSTATUS val: 81
+<14>[ 3561.118211] healthd: battery l=100 v=4278 t=29.0 h=2 st=3 c=-34 chg=
+<14>[ 3561.145838] healthd: battery l=100 v=4278 t=29.0 h=2 st=3 c=-34 chg=
+<6>[ 3561.305980] pmic_ccsm pmic_ccsm: Read USBSRCDETSTATUS val: 86
+<6>[ 3561.306054] pmic_ccsm pmic_ccsm: Charger type after detection complete: 1
+<6>[ 3561.306100] pmic_ccsm pmic_ccsm: Notifying OTG ev:3, evt:0, chrg_type:1, mA:0
+<6>[ 3561.306181] process_cable_props: event:0, type:1, ma:0
+<6>[ 3561.309649] bq24261_charger 8-006b: bq24261_handle_irq:1433 stat=0x36
+<6>[ 3561.310483] bq24261_charger 8-006b: bat_volt=4253750 Voltage Max Design=4320000 OVP_VOLT=4363200 OVP recover volt=4276800
+<6>[ 3561.332449] trigger_algo:Algo_status:2
+<6>[ 3561.332693] pmic_ccsm pmic_ccsm: pmic_set_cc: Battery Zone:7
+<6>[ 3561.342451] pmic_ccsm pmic_ccsm: pmic_set_cv: Battery Zone:7
+<6>[ 3561.388964] trigger_algo:Algo_status:2
+<6>[ 3561.389134] pmic_ccsm pmic_ccsm: pmic_set_cc: Battery Zone:7
+<6>[ 3561.396996] pmic_ccsm pmic_ccsm: pmic_set_cv: Battery Zone:7
+<14>[ 3561.473792] healthd: battery l=100 v=4278 t=29.0 h=2 st=4 c=-35 chg=
+<6>[ 3561.498654] pmic_ccsm pmic_ccsm: CHGRIRQ0=80 SCHGRIRQ0=1 CHGRIRQ1=0 SCHGRIRQ1=0
+<3>[ 3561.498672] pmic_ccsm pmic_ccsm: Battery temperature zone changed
+<6>[ 3561.530371] pmic_ccsm pmic_ccsm: Battery Zone changed. Current zone:3, temp:29
+<6>[ 3561.561349] max170xx_battery 2-0036: soc perc: soc: 99, offset: 1
+<14>[ 3561.620578] healthd: battery l=100 v=4278 t=29.0 h=2 st=4 c=-37 chg=
+<14>[ 3561.645771] healthd: battery l=100 v=4278 t=29.0 h=2 st=4 c=-37 chg=
+<6>[ 3561.954330] android_work: sent uevent USB_STATE=CONNECTED
+<6>[ 3561.958365] android_work: sent uevent USB_STATE=DISCONNECTED
+<6>[ 3562.045082] android_work: sent uevent USB_STATE=CONNECTED
+<6>[ 3562.046620] android_usb gadget: high-speed config #1: android
+<6>[ 3562.046685] process_cable_props: event:0, type:1, ma:500
+<6>[ 3562.047166] android_work: sent uevent USB_STATE=CONFIGURED
+<6>[ 3562.056479] request_suspend_state: wakeup (3->0) at 3521381640334 (2014-09-02 01:02:04.230697976 UTC)
+<6>[ 3562.068073] [drm] restore some registers to default value
+<6>[ 3562.068259] [drm] setup drain latency
+<6>[ 3562.086282] trigger_algo:Algo_status:2
+<6>[ 3562.086423] pmic_ccsm pmic_ccsm: pmic_set_cc: Battery Zone:3
+<6>[ 3562.095011] pmic_ccsm pmic_ccsm: pmic_set_cv: Battery Zone:3
+<6>[ 3562.102832] bq24261_charger 8-006b: Charging reset
+<6>[ 3562.116705] bq24261_charger 8-006b: Completed bq24261_enable_charging=1
+<6>[ 3562.116725] bq24261_charger 8-006b: *======================*
+<6>[ 3562.117268] bq24261_charger 8-006b: Battery Current=-218ma
+<6>[ 3562.117816] bq24261_charger 8-006b: Battery VOlatge=4245mV
+<6>[ 3562.117829] bq24261_charger 8-006b: BQ24261 Register dump:
+<6>[ 3562.127039] bq24261_charger 8-006b:  0x0=0x0, 0x1=0xA8, 0x2=0xA4, 0x3=0x46, 0x4=0x39, 0x5=0x5, 0x6=0x60,
+<6>[ 3562.127062] bq24261_charger 8-006b: *======================*
+<6>[ 3562.134857] mtp_open
+<6>[ 3562.179965] bq24261_charger 8-006b: bq24261_handle_irq:1433 stat=0x10
+<6>[ 3562.179984] bq24261_charger 8-006b: Charger Status: Charge Progress
+<6>[ 3562.179991] bq24261_charger 8-006b: *======================*
+<6>[ 3562.180923] bq24261_charger 8-006b: Battery Current=-393ma
+<6>[ 3562.181553] bq24261_charger 8-006b: Battery VOlatge=4213mV
+<6>[ 3562.181562] bq24261_charger 8-006b: BQ24261 Register dump:
+<6>[ 3562.191983] bq24261_charger 8-006b:  0x0=0x10, 0x1=0xAC, 0x2=0xA4, 0x3=0x46, 0x4=0x39, 0x5=0x5, 0x6=0x60,
+<6>[ 3562.192002] bq24261_charger 8-006b: *======================*
+<4>[ 3562.194838] skip duplicate setting of DPI control
+<6>[ 3562.225104] max170xx_battery 2-0036: soc perc: soc: 99, offset: 1
+<6>[ 3562.225364] rmi4_ts 7-0020: Enter rmi4_resume
+<6>[ 3562.256140] trigger_algo:Algo_status:2
+<6>[ 3562.256475] pmic_ccsm pmic_ccsm: pmic_set_cc: Battery Zone:3
+<6>[ 3562.291381] pmic_ccsm pmic_ccsm: pmic_set_cv: Battery Zone:3
+<14>[ 3562.294430] healthd: battery l=100 v=4278 t=29.0 h=2 st=2 c=-40 chg=u
+<14>[ 3562.422629] healthd: battery l=100 v=4278 t=29.0 h=2 st=2 c=-41 chg=u
+<14>[ 3562.453498] healthd: battery l=100 v=4278 t=29.0 h=2 st=2 c=-41 chg=u
+shell@mofd_v1:/ # 
+
+/home/bingquan/lenovo/Kobe_ww34/development/ndk/sources/android/native_app_glue
+android_native_app_glue.c
+/home/bingquan/lenovo/Kobe_ww34/frameworks/native/libs/binder

@@ -1,0 +1,4 @@
+sed -i s/IAPACHE-.*$/APACHE-131/g *.patch
+sed -i '/Tracked-On/a\Tracked-On: https://jira01.devtools.intel.com/browse/APACHE-131' *.patch
+find . -name '*.prototxt' | xargs sed -i 's/solver_mode\: CPU\//solver_mode: CPU/g'
+find . -name *.prototxt | xargs sed -i 's/solver_mode: GPU/solver_mode: CPU/g'

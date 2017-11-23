@@ -1,0 +1,2 @@
+# remove 4~6 colums
+cut -b-3,7- filename

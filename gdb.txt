@@ -1,0 +1,48 @@
+source build/env_setup.sh && x86_64-linux-android-gdb vmlinx
+/gcc/linux-x86/host/x86_64-w64-mingw32-4.8/bin/x86_64-w64-mingw32-addr2line
+./gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6/bin/x86_64-linux-addr2line
+./gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8/bin/x86_64-linux-addr2line
+./gcc/linux-x86/aarch64/aarch64-linux-android-4.8/bin/aarch64-linux-android-addr2line
+./gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-addr2line
+./gcc/linux-x86/x86/x86_64-linux-android-4.8/bin/x86_64-linux-android-addr2line
+./gcc/linux-x86/x86/x86_64-linux-android-4.9/bin/x86_64-linux-android-addr2line
+/gcc/darwin-x86/aarch64/aarch64-linux-android-4.8/bin/aarch64-linux-android-addr2line
+./gcc/darwin-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-addr2line
+./gcc/darwin-x86/x86/x86_64-linux-android-4.8/bin/x86_64-linux-android-addr2line
+./gcc/darwin-x86/arm/arm-linux-androideabi-4.8/bin/arm-linux-androideabi-addr2line
+./gcc/darwin-x86/arm/arm-eabi-4.8/bin/arm-eabi-addr2line
+./tools/gcc-sdk/addr2line
+
+gdb -c core ./bin/NMTest ../ihl2/weights
+(gdb) where
+(gdb) up
+#1  0x00007f3e1f71ee07 in ___vfscanf (s=<optimized out>, format=<optimized out>, argptr=argptr@entry=0x7ffe80f71d48) at vfscanf.c:3066
+3066    in vfscanf.c
+(gdb) bt
+#0  _IO_vfscanf_internal (s=0x0, format=0x55fbb0e4c517 "%d,", argptr=argptr@entry=0x7ffe80f71d48, errp=errp@entry=0x0) at vfscanf.c:347
+#1  0x00007f3e1f71ee07 in ___vfscanf (s=<optimized out>, format=<optimized out>, argptr=argptr@entry=0x7ffe80f71d48) at vfscanf.c:3066
+#2  0x00007f3e1f726777 in __fscanf (stream=<optimized out>, format=<optimized out>) at fscanf.c:31
+#3  0x000055fbb0e446be in (anonymous namespace)::load_data (this=<optimized out>) at /home/bingquan/AIP/zhang xin/ihl2-TestWorkbench/neuromatch.cpp:30
+#4  (anonymous namespace)::test_nm () at /home/bingquan/AIP/zhang xin/ihl2-TestWorkbench/neuromatch.cpp:143
+#5  main (argc=<optimized out>, argv=<optimized out>) at /home/bingquan/AIP/zhang xin/ihl2-TestWorkbench/neuromatch.cpp:173
+(gdb) up
+#2  0x00007f3e1f726777 in __fscanf (stream=<optimized out>, format=<optimized out>) at fscanf.c:31
+31  fscanf.c: No such file or directory.
+(gdb) up
+#3  0x000055fbb0e446be in (anonymous namespace)::load_data (this=<optimized out>) at /home/bingquan/AIP/zhang xin/ihl2-TestWorkbench/neuromatch.cpp:30
+30              if (fscanf(data_file, "%d,", &val) == EOF) {
+(gdb) list
+25      while (true) {
+26          int val = 0;
+27          bool quit_reading = false;
+28          vector<int> temp;
+29          for (int i = 0; i < NM_INPUT_SIZE; i++) {
+30              if (fscanf(data_file, "%d,", &val) == EOF) {
+31                  quit_reading = true;
+32                  break;
+33              }
+34              temp.push_back(val);
+(gdb) p data_file
+$1 = (FILE *) 0x0
+(gdb) 
+

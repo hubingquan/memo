@@ -1,0 +1,15 @@
+/home/bingquan/sofia/sf3gr_maint/hardware/intel/em_common/fg_algo/wcove_fg_algo
+/home/bingquan/sofia/sf3gr_maint/kernel/cht/drivers/platform/x86/whiskycove_pmic_cc.c
+/home/bingquan/sofia/sf3gr_maint/kernel/cht/drivers/power/intel_fuel_gauge.c
+/home/bingquan/sofia/sf3gr_maint/vendor/intel/hardware/PRIVATE/sw_fuelgauge/swfg_daemon/src
+/home/bingquan/sofia/sf3gr_maint/kernel/sofia-3gr/drivers/power/ag620_sw_fuel_gauge_hal.c
+
+
+LTE kernel
+/home/bingquan/sofia/sf3gr_maint/kernel/sofia-lte/drivers/power/sw_fuel_gauge_iface.c
+drivers/power/pmic_sw_fuel_gauge_hal.c
+
+root@r2_sltmrdV34:/sys/bus/platform/drivers # ls | grep fg
+pmic_swfg_hal
+swfg_iface
+

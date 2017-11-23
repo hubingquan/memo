@@ -1,0 +1,1 @@
+/home/bingquan/imin/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8/bin/x86_64-linux-objdump -Ssx -Mx86-64 client.o > /tmp/client.S

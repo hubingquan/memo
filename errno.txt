@@ -1,0 +1,2 @@
+/usr/include/asm-generic/errno-base.h
+/usr/include/asm-generic/errno.h

@@ -1,0 +1,1 @@
+mm > ../dalvik-mm.log 2>&1

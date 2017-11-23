@@ -1,0 +1,80 @@
+Please see the example commands to read and write sensor regsiters from IA linux:
+shell@mofd_v1:/sys/bus/pci/devices/0000:00:16.1 # echo "2 0xf" >  debug
+shell@mofd_v1:/sys/bus/pci/devices/0000:00:16.1 # cat debug
+mask_out:0x2 mask_level:0xf
+shell@mofd_v1:/sys/bus/pci/devices/0000:00:16.1 # echo "0 16 1 1 0x20 1 0xff">control
+shell@mofd_v1:/sys/bus/pci/devices/0000:00:16.1 # cat trace
+(675404000,ACCEL, INFO): ------------ i2c_dbg, write(1, 0x00000020, 1)
+(675404000,ACCEL, INFO): 0x00000020: 0x000000ff
+(675404000,ACCEL, INFO): ------------ i2c_dbg
+shell@mofd_v1:/sys/bus/pci/devices/0000:00:16.1 # echo "0 16 1 0 0x20 1" > control
+shell@mofd_v1:/sys/bus/pci/devices/0000:00:16.1 # cat trace
+(716698000,ACCEL, INFO): ------------ i2c_dbg, read(1, 0x00000020, 1)
+(716698000,ACCEL, INFO): 0x00000020: 0x000000ff
+(716698000,ACCEL, INFO): ------------ i2c_dbg
+shell@mofd_v1:/sys/bus/pci/devices/0000:00:16.1 #
+
+Note:
+#1> echo "2 0xf" > debug #is to enable this debug feature
+#2> echo "0 16 1 1 0x20 1 0xff" > control 
+the 1st byte is transaction_id, default 0 in this case; 
+the 2nd byte 16 is fixed for this I2C_debug feature, 
+the 3rd byte is sensor id: 1: Accel,
+the 4th byte is read/write: 0: read, 1: write
+the 5th byte is register offset
+the 6th byte is length in bytes
+the 7th byte(for write only) is the value to be written.
+
+As a prerequisite, psh.bin needs recompiling, we will upload recompiled psh.bin file if this example interface meets your expectation.
+[reply] [-] Comment 6 Hu, Bingquan 2014-06-18 00:12:02 CST
+Dear Samin,
+
+COMP_CAL and GYRO_CAL virtual sensors were implemented within PSH, IA side send commands to PSH to start calibration and receive calibration result, Does this mechanism meet your requirement-online runtime calibration?
+[reply] [-] Comment 7 Ryu, Samin 2014-06-18 08:40:37 CST
+Dear, Bingquan.
+
+If I use psh.bin with CONFIG_I2C_DEBUG_ON, 
+Is it make load to PSH?
+
+and,
+We didn't received COMP_CAL and GYRO_CAL source code.
+So, I did request guide for virtual sensor implement.
+Where is start calibration UI?
+
+runtime control features will include to product offical image.
+so, we need more analysis and test to determine case 1 and 2.
+[reply] [-] Comment 8 Hu, Bingquan 2014-06-18 10:13:55 CST
+Dear Samin,
+
+Regarding recompiling and downloading new psh.bin:
+
+Pease change /usr/pshfw/pshfw/config/psh_viper_defconfig file
+CONFIG_I2C_DEBUG_ON=y
+Then rebuild the psh.bin
+
+adb push psh.bin /etc/firmware/
+adb shell rm /etc/firmware/psh.bin.* (this step necessary as psh.bin is not the default one)
+reboot for the new psh.bin to take effect.
+[reply] [-] Comment 9 Hu, Bingquan 2014-06-18 11:09:54 CST
+The control sysfs node receives the command format:
+<Trans_ID><CMD_ID><Sensor_ID><Read/WRITE><Reg Offset><Length><Value>
+Trans_ID and CMD_ID are fixed values of 0 and 16 respectively.
+Sesnor_ID:
+1: accel; 2: gyro; 3: compass; 4: barometer; 5: ALS; 6: Proximity; 7: terminal context;
+(In reply to comment #5)
+> shell@mofd_v1:/sys/bus/pci/devices/0000:00:16.1 # echo "0 16 1 1 0x20 1
+> 0xff">control
+> shell@mofd_v1:/sys/bus/pci/devices/0000:00:16.1 # cat trace
+> (675404000,ACCEL, INFO): ------------ i2c_dbg, write(1, 0x00000020, 1)
+> (675404000,ACCEL, INFO): 0x00000020: 0x000000ff
+> (675404000,ACCEL, INFO): ------------ i2c_dbg
+
+cd /usr/pshfw/pshfw/src
+make ext_build EXT=~/main/LGEPD2A O=~/main/vendor/intel/hardware/ OUT=~/main/LGEPD2A/out2
+./vendor/intel/fw/PRIVATE/psh/psh_mofd_v1.bin
+./device/intel/moorefield/AndroidBoard.mk
+./device/intel/common/AndroidKernel.mk:define build_kernel_module
+vendor/intel/fw/PRIVATE/ifwi/anniedale/xml/MOORLDA0-VV-0000.0006-SIL.xml
+/home/bingquan/r44d-stable/device/intel/moorefield/mofd_v1/mofd_v1_diffconfig
+
+https://wiki.ith.intel.com/display/ANDROIDCAS/PSH+Legacy#PSHLegacy-StartupGuide

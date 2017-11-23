@@ -1,0 +1,1 @@
+hexdump -e '1/4 %X,n' i8170_gsl1680.fw hexdump -e '1/4  %X,n' i8170_gsl1680.fw

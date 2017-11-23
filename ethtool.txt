@@ -1,0 +1,9 @@
+~$ ethtool -S eth0
+NIC statistics:
+rx_packets: 9059310
+tx_packets: 1484581
+rx_bytes: 4078700092
+tx_bytes: 713961609
+
+On Red Hat Enterprise Linux, increase the frame size with MTU=9000 in the
+/etc/sysconfig/network-scripts/ifcfg- file for the interface

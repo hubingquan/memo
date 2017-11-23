@@ -1,0 +1,1 @@
+od -A x -t x1z power_measurement_on.bin

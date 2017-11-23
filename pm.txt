@@ -1,0 +1,4 @@
+ still reproduced with only S0i3 disabled, I disable the s0i3 by:
+echo 9 > /d/cstate_ignore_add
+echo clear > /d/mid_pmu_states
+

@@ -1,0 +1,6 @@
+sudo pip install scipy
+sudo -H pip install scikit-image
+../build/ihl2/ihl2-train --trainset ../data/gesture/datasets/ --testset ../data/gesture/datasets gesture
+./tools/dump_weights.py gesture gesture_iter_10000.caffemodel 
+../ihl2-TestWorkbench/bin/TestWorkbench ./weights test_gesture
+../build/ihl2/ihl2-train --trainset ../data/gesture/datasets/ --testset ../data/gesture/test_datasets gesture

@@ -1,0 +1,5 @@
+ 2005  sudo apt-get install gdebi ia32-libs
+ 2007  sudo gdebi PhoneFlashTool_4.4.4.0_linux_x86_64.man 
+ 2014  sudo gdebi MPTA_3.4.0.0_Linux_amd64.deb 
+ 2016  history | grep gdebi
+ 2017  history | grep gdebi > ~/.tips/install.txt

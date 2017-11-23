@@ -1,0 +1,18 @@
+some interrupt handlers (known in Linux as fast interrupt handlers) run with all interrupts on the local processor disabled. This is done to ensure that the interrupt handler runs without interruption, as quickly as possible. More so, all interrupt handlers run with their current interrupt line disabled on all processors. This ensures that two interrupt handlers for the same interrupt line do not run concurrently. It also prevents device driver writers from having to handle recursive interrupts, which complicate programming.
+
+spin_lock_irqsave is basically used to save the interrupt state before taking the spin lock, this is because spin lock disables the interrupt, when the lock is taken in interrupt context, and re-enables it when while unlocking. The interrupt state is saved so that it should reinstate the interrupts again.
+
+Example:
+
+Lets say interrupt x was disabled before spin lock was acquired
+spin_lock_irq will disable the interrupt x and take the lock
+spin_unlock_irq will enable the interrupt x.
+
+So in the 3rd step above after releasing the lock we will have interrupt x enabled which was earlier disabled before the lock was acquired.
+
+So only when you are sure that interrupts are not disabled only then you should spin_lock_irq otherwise you should always use spin_lock_irqsave.
+
+#Force kerenl code
+indent -kr -i8 -ts8 -sob -l80 -ss -bs -psl <file>
+scripts/Lindent
+

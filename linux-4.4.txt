@@ -1,0 +1,21 @@
+repo init -u ssh://android.intel.com/a/aosp/platform/manifest -m ndg-android -b ndg/dev/linux-4.4
+repo sync 篓Cc 篓Cj5
+
+Before building, please apply this patch into your workspace:
+https://android.intel.com/#/c/549140/
+
+Linux-4.4 branch only includes 9 git projects as follows, that means the patches in the following projects need to be ported.
+
+The HAL project was shared, means no need to port HAL patches.
+
+include/bsp-priv.xml:  <project groups="bsp-priv" path="vendor/intel/PRIVATE/mvn" name="a/bsp/vendor/intel/PRIVATE/mvn" revision="ndg/dev/linux-4.4">
+include/bsp-priv.xml:  <project groups="bsp-priv" path="vendor/intel/PRIVATE/manifest" name="a/aosp/platform/manifest" revision="ndg/dev/linux-4.4">
+include/bsp-public-src.xml:  <project groups="device,grant" name="a/aosp/device/intel/grant" path="device/intel/grant" revision="ndg/dev/linux-4.4"/>
+include/bsp-public-src.xml:  <project groups="device,glacier" name="a/aosp/device/intel/glacier" path="device/intel/glacier" revision="ndg/dev/linux-4
+include/bsp-public-src.xml:  <project groups="device,robby" name="a/aosp/device/intel/robby" path="device/intel/robby" revision="ndg/dev/linux-4.4"/>
+include/bsp-public-src.xml:  <project groups="device,shasta" name="a/aosp/device/intel/shasta" path="device/intel/shasta" revision="ndg/dev/linux-4.4"
+include/bsp-public-src.xml:  <project groups="device,anthracite" name="a/aosp/device/intel/anthracite" path="device/intel/anthracite" revision="ndg/de
+include/bsp-public-src.xml:  <project groups="intel" name="a/aosp/platform/hardware/intel/img/hwcomposer" path="hardware/intel/img/hwcomposer" revisio
+include/bsp-public-src.xml:  <project groups="linux" path="linux/kernel" name="a/bsp/hardware/intel/linux-2.6" revision="ndg/dev/linux-4.4"/>
+
+

@@ -1,0 +1,39 @@
+
+m: Yu, Johnny 
+Sent: Tuesday, August 27, 2013 10:38 AM
+To: Qin, Jian Feng
+Subject: FPT usage to flash FW under OS
+
+FPT (Flash Program Tool) is a powerful tool which runs on target and have multiple functions. It is designed for Mfg flow. One of the function is to flash the whole SPI NOR image. In case user board has issue with Dediprog flashing SPI NOR area, FPT can be a very useful tool to flash the SPI NOR image. 
+ 
+Steps to follow:
+a.	To download FPT tools
+            http://xfstk.intel.com/baytrail.htm
+            look for FPT Tools 2013-06-21-ENG-DROP Linux tar , (the version might update as PSI release new version)
+            Download the tar.gz file
+            Push the tar file to device using ADB:
+Adb root
+Adb shell mkdir /data/test1
+Adb push FPT_TOOLS.tar /data/test1
+Adb shell 
+            cd /data/test1
+            gunzip FPT_TOOLS.tar.gz
+            tar 杧vf FPT_TOOLS.tar
+ 
+b.	 Push the FW image (8MB) to the device:
+Adb push TEST_FW1.bin  /data/test1
+ 
+ 
+c.	Use FPT to update the SPI NOR area
+adb shell
+cd /data/test1/2013-6-21-ENG-DROP/
+./FPT 朏 ../TEST_FW1.bin
+Let it finish w/o interruption
+ 
+d.	Next time you have a new SPI NOR image, go to step C).  If you have erased the /data partition on device, then you need to push the FPT tool again using step A)桞).
+ 
+FPT w/o option will list out help info (FPT is a powerful tool, it can be used to program GV e-fuse etc., those can have huge impact on system,  for most users, stay away from those options unless we understand the impact.)
+
+
+--Johnny
+

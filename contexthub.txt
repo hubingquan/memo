@@ -1,0 +1,13 @@
+~/sofia/n_mr0_master$ find . -iname '*context*hub*'
+./hardware/libhardware/include/hardware/context_hub.h
+./frameworks/base/core/jni/android_hardware_location_ContextHubService.cpp
+./frameworks/base/core/java/android/hardware/location/IContextHubService.aidl
+./frameworks/base/core/java/android/hardware/location/ContextHubInfo.aidl
+./frameworks/base/core/java/android/hardware/location/ContextHubInfo.java
+./frameworks/base/core/java/android/hardware/location/ContextHubService.java
+./frameworks/base/core/java/android/hardware/location/IContextHubCallback.aidl
+./frameworks/base/core/java/android/hardware/location/ContextHubManager.java
+./frameworks/base/core/java/android/hardware/location/ContextHubMessage.aidl
+./frameworks/base/core/java/android/hardware/location/ContextHubMessage.java
+./frameworks/base/services/core/java/com/android/server/ContextHubSystemService.java
+

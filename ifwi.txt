@@ -1,0 +1,2 @@
+common/ifwi_version.py
+/home/bingquan/cht51-stable/hardware/intel/efi_capsules/release

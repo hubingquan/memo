@@ -1,0 +1,21 @@
+鏌ョ湅褰撳墠鍏ㄩ儴鐨?? screen 锛??
+
+$screen -ls
+浼氭樉绀轰笅闈㈢殑淇℃伅锛??
+
+There are screens on:
+        1542.pts-1.AY1212021007126539381        (01/30/2013 03:29:06 PM)       (Detached)
+                1434.pts-1.AY1212021007126539381        (01/30/2013 03:13:56 PM)       (Attached)
+                2 Sockets in /var/run/screen/S-user.
+                鍏朵腑姣忎竴鏉℃渶鍓嶉潰鐨勫氨鏄?? screen 鐨?? id
+
+                杩炴帴鍒?? detached 鐨?? screen 锛??
+
+                $screen -r 1542
+                浠?? screen 涓??閫??鍑猴紙浣嗕笉鍏抽棴 screen 杩涚▼锛夛細
+
+                鎸?? Ctrl-A-D
+                鍦?? screen 涓??鏌ョ湅鍏ㄩ儴鍛戒护锛??
+
+                鎸?? Ctrl-A-?
+脢脳 脧脠脫脙screen [-S]脙眉脕卯陆篓脕垄脪禄赂枚session拢卢脠禄潞贸戮脥驴脡脪脭脭脷脮芒赂枚session脰脨陆篓脕垄露脿赂枚window脕脣隆拢脢鹿脫脙screen [-S]驴脡脪脭陆篓脕垄露脿赂枚session拢卢露酶脙驴赂枚session脫脰驴脡脪脭陆篓脕垄露脿赂枚window隆拢脭脷虏禄脥卢碌脛window脰庐录盲驴脡脪脭脫脙Ctrl-A n/p碌脠脙眉脕卯脌麓脟脨禄禄隆拢露酶脧毛脪陋脭脷露脿赂枚session脰庐录盲脟脨禄禄拢卢脭貌脨猫脪陋脛茫Ctrl-A d禄脴碌陆碌脟脗录session拢篓戮脥脧帽脪禄驴脙麓贸脢梅碌脛赂霉拢漏拢卢脠禄潞贸脭脵脥篓鹿媒screen -ls虏茅驴麓脫脨脛脛脨漏session拢卢脠禄潞贸脢鹿脫脙screen -r脌麓戮枚露篓禄脰赂麓碌陆脛脛赂枚session隆拢露脭脫脷脪脩戮颅Attached Session脭貌虏禄脛脺脰卤陆脫screen -r拢卢脨猫脪陋脧脠screen -d拢卢脠禄潞贸虏脜脛脺screen -r

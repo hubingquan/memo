@@ -1,0 +1,1 @@
+/home/bingquan/imin/system/core/init/init.c

@@ -1,0 +1,95 @@
+  912  git branch -d remotes/origin/vlv2-b0
+  913  git branch -D remotes/origin/vlv2-b0
+  914  git checkout -b vlv2-b0 remotes/origin/vlv2-b0
+e three commands have entirely different purposes. They are not even remotely similar.
+
+git revert
+
+This command creates a new commit that undoes the changes from a previous commit. This command adds new history to the project (it doesn't modify existing history).
+
+git checkout
+
+This command checks-out content from the repository and puts it in your work tree. It can also have other effects, depending on how the command was invoked. For instance, it can also change which branch you are currently working on. This command doesn't make any changes to the history.
+
+git reset
+
+This command is a little more complicated. It actually does a couple of different things depending on how it is invoked. It modifies the index (the so-called "staging area"). Or it changes what commit a branch head is currently pointing at. This command may alter history (by changing the commit that a branch references).
+
+Using these commands
+
+If a commit has been made somewhere in the project's history, and you later decide that the commit is wrong and should not have been done, then git revert is the tool for the job. It will undo the changes introduced by the bad commit, recording the "undo" in the history.
+
+If you have modified a file in your working tree, but haven't committed the change, then you can use git checkout to checkout a fresh-from-repository copy of the file.
+
+If you have made a commit, but haven't shared it with anyone else and you decide you don't want it, then you can use git reset to rewrite the history so that it looks as though you never made that commit.
+
+These are just some of the possible usage scenarios. There are other commands that can be useful in some situations, and the above three commands have other uses as well.
+
+echo id_rsa.pub > /home/bingquan/.ssh/authorized.keys
+git init --bare
+chown bingquan.dev /repo/perflock.git
+
+git diff --stat HEAD~10
+
+restore the Makefile(discard the changes)
+git checkout HEAD~1 -- Makefile
+git commit --amend
+
+	
+As per the Git Documentation git clean
+
+Remove untracked files from the working tree
+Step 1 is to show what will be deleted by using the -n option:
+
+git clean -f -n
+Clean Step - beware: this will delete files:
+
+git clean -f
+To remove directories, run git clean -f -d or git clean -fd
+To remove ignored files, run git clean -f -X or git clean -fX
+To remove ignored and non-ignored files, run git clean -f -x or git clean -fx
+git rebase umg/cas/platform/android/r6apache apache-23 
+git pull --rebase # fast forward
+
+git bisect start
+git bisect bad HEAD~X
+git bisect good HEAD
+git bisect start - arch/x86
+
+diffstat -p1 my-patch
+
+~/caffe$ git remote add -f blvc_cafffe https://github.com/BVLC/caffe.git
+Updating blvc_cafffe
+remote: Counting objects: 1518, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 1518 (delta 403), reused 403 (delta 403), pack-reused 1113
+Receiving objects: 100% (1518/1518), 1.07 MiB | 229.00 KiB/s, done.
+Resolving deltas: 100% (905/905), completed with 142 local objects.
+From https://github.com/BVLC/caffe
+* [new branch]        gh-pages             -> blvc_cafffe/gh-pages
+* [new branch]        intel                -> blvc_cafffe/intel
+* [new branch]        master               -> blvc_cafffe/master
+* [new branch]        opencl               -> blvc_cafffe/opencl
+* [new branch]        readme_list_branches -> blvc_cafffe/readme_list_branches
+* [new branch]        tutorial             -> blvc_cafffe/tutorial
+* [new branch]        windows              -> blvc_cafffe/windows
+~/caffe$ 
+
+
+# local debug branch to track remote origin/debug
+git branch --set-upstream debug origin/debug  
+
+鈥??or create a new repository on the command line
+
+echo "# memo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/hubingquan/memo.git
+git push -u origin master
+鈥??or push an existing repository from the command line
+
+git remote add origin https://github.com/hubingquan/memo.git
+git push -u origin master
+鈥??or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.

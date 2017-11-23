@@ -1,0 +1,2 @@
+rsync -a sw_fuelgauge ndgodc1@10.239.153.24:~/
+123457

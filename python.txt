@@ -1,0 +1,5 @@
+$ pip install pyyaml
+If you want to install python yaml system-wide in linux, you can also use a package manager, like aptitude or yum:
+
+$ sudo apt-get install python-yaml
+$ sudo yum install python-yaml

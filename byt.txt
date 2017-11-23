@@ -1,0 +1,25 @@
+
+   Users who have access to byt-iafw project will run for instance:
+??  repo init -g default,-victoriawood,-lpe,-intel_cws,-broadcom,-bcm_cws_gps -u ssh://android.intel.com/a/aosp/platform/manifest -b platform/android/r42b-stable -m android-r42b-restricted
+??  repo sync 杍 5
+
+I tried above and it works for IAFW download, so below are a summery of how to get IAFW and FSP (the same content I have add to IAFW notes.docx on our \\VMSPFSFSSH09\SSV_SS_Share\BayTrail
+        For IAFW on BSP repo
+http://eam.intel.com/EAMWeb/default.aspx then EAM . Enterprise Applications . MCG . Build . IFWI_IAFW
+Users with access to restricted projects will use new android-r42b-restricted manifest, 
+??         Users with access to restricted projects will use new android-r42b-restricted manifest, which will include all projects (public and restricted ones):
+
+o   Users who have access to byt-iafw project will run for instance:
+??  repo init -g default,-victoriawood,-lpe,-intel_cws,-broadcom,-bcm_cws_gps -u ssh://android.intel.com/a/aosp/platform/manifest -b platform/android/r42b-stable -m android-r42b-restricted
+??  repo sync 杍 5
+
+??         Or 
+git clone ssh://jzhao33@android.intel.com:29418/a/bsp/vendor/intel/fw/PRIVATE/byt-iafw
+This link is indicated by the patch set on gerrit
+Vendor/intel/fw/PRIVATE/byt-iafw 
+And
+.repo/manifests/includes/iafw-bsp-restricted.xml  
+          For FSP on teamforge 
+Get access to MCG-UMFDK on teamforge and then 
+git clone ssh://jzhao33@git-amr-2.devtools.intel.com:29418/mcg_umfdk-fsp
+

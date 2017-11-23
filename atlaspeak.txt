@@ -1,0 +1,55 @@
+curl http://commondatastorage.googleapis.com/git-repo3-downloads/repo3 > ~/bin/repo3
+chmod a+x ~/bin/repo3 
+
+
+repo3 init -u ssh://android.intel.com:29418/atlaspeak_manifest
+repo3 sync -j 5 -d
+./wearable_device_sw/internal/build/tools/scripts/one_time_setup.sh
+mkdir -p ./out
+cd ./out
+ 
+ Then, to make build for PTB board, just as below command lines: 
+ make -f ../wearable_device_sw/internal/projects/quark_se2_reference/Makefile
+ make package
+ make flash
+  
+  (Quark_se2_reference 露脭脫娄碌脛脢脟PTB board; )
+
+
+
+
+
+repo3 init -u ssh://android.intel.com/atlaspeak_manifest -b thunderdome_v4 -m default.xml
+#{ Enter yes 2 times if repo3 asks you to establish authenticity of host xxx }
+
+repo3 sync -j 5
+make -C wearable_device_sw/projects/curie_iq_crb/ one_time_setup
+
+Cd $TD
+mkdir -p ./out
+cd ./out
+make image -j `nproc`
+make package -j `nproc`
+cd $TD
+mkdir -p out
+cd out
+make image -j `nproc`
+make package -j `nproc`
+X = one of [iq_crb, iq_orb, streaming or sandbox]
+curl http://commondatastorage.googleapis.com/git-repo3-downloads/repo3 > ~/bin/repo33
+
+~/autopatch.py 560701
+make -f ../wearable_device_sw/internal/projects/quark_se2_reference/Makefile
+
+repo3 forall -c 'git checkout -b ATP-5.0.18 ATP-5.0.18'
+
+make flash FLASH_CONFIG=jtag_full 
+
+vi ./packages/soc_drivers/soc/quark_se_2/quark_se_2.mk
+
+/home/bingquan/atp2_cc/wearable_device_sw/external/toolchain/tools/compiler/gcc-ia/5.2.1/bin/i586-intel-elfiamcu-ar
+
+artifactory:
+https://mcg-depot.intel.com/artifactory/atlaspeak/v5_m1/weekly/atlaspeak-v5-M1-weekly-7-2017-04-28_11-14-10/
+make -f ../wearable_device_sw/internal/projects/quark_se2_reference/Makefile setup EMULATOR=y BUILDVARIANT=debug BOARD=quark_se2_ptb
+~/autopatch.py 587148 586786 585179 586285 586682 586697

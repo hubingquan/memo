@@ -1,0 +1,5 @@
+https://source.android.com/source/initializing.html
+
+https://securewiki.ith.intel.com/display/GMIN/1Android-N
+update-alternatives --config java
+java -version

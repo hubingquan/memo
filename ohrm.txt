@@ -1,0 +1,4 @@
+/home/bingquan/ndg-android/vendor/intel/hardware/PRIVATE/ohrm
+/home/bingquan/ndg-android/vendor/intel/PRIVATE/ohrm-fw
+/home/bingquan/ndg-android/vendor/intel/fw/PRIVATE/ohrm
+*.bin *.elf *.pkg

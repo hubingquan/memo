@@ -1,0 +1,13 @@
+
+vim -t main hop right to the definition
+
+# remove trailing spaces
+%s/\s\+$//
+
+#truncate lines at 80 characters
+
+
+:se tw=80
+
+Then mark the text and type gq
+

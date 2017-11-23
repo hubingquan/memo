@@ -1,0 +1,2 @@
+find . -type f -name *.java | xargs tar cvf myfile.tar
+find . -name '*.htm' | xargs tar czvf backup.tar.gz

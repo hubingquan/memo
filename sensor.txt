@@ -1,0 +1,29 @@
+adb logcat -v threadtime -s SensorService:V Sensors:V LibsensorhubClient:V Libsensorhub:V PhysicalActivitySensor:V Ped
+ometerSensor:V GestureSensor:V AwareSensor:V
+
+./device/intel/moorefield/mofd_v1/config/sensors/sensor_hal_config_default.xml
+
+./symbols/system/lib/libsensorhub.so
+./symbols/system/lib/libsensorservice.so
+./symbols/system/lib/hw/sensors.mofd_v1.so
+./symbols/system/lib/libvirtualsensors.so
+./symbols/system/bin/sensorservice
+./symbols/system/bin/sensorhubd
+./system/lib/libsensorhub.so
+./system/lib/libsensorservice.so
+./system/lib/hw/sensors.mofd_v1.so
+./system/lib/libvirtualsensors.so
+./system/bin/sensorservice
+./system/bin/sensorhubd
+./system/etc/thermal_sensor_config.xml
+./system/etc/sensor_hal_config_default.xml
+./system/etc/permissions/android.hardware.sensor.gyroscope.xml
+./system/etc/permissions/android.hardware.sensor.compass.xml
+./system/etc/permissions/android.hardware.sensor.proximity.xml
+./system/etc/permissions/android.hardware.sensor.stepdetector.xml
+./system/etc/permissions/android.hardware.sensor.accelerometer.xml
+./system/etc/permissions/android.hardware.sensor.light.xml
+./system/etc/permissions/android.hardware.sensor.barometer.xml
+./system/etc/permissions/android.hardware.sensor.stepcounter.xml
+/home/bingquan/LGe/r5_coral2/device/intel/moorefield/hdk
+cp ~/0001-Bug-xx-enabling-terminal-orientation.patch

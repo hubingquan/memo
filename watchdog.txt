@@ -1,0 +1,10 @@
+./drivers/watchdog/watchdog_dev.o
+./drivers/watchdog/watchdog.o
+./drivers/watchdog/watchdog_core.o
+./drivers/watchdog/iTCO_wdt.o
+./drivers/watchdog/built-in.o
+./arch/x86/kernel/cpu/perfctr-watchdog.o
+
+vendor/intel/hardware/ia_watchdog/watchdog_daemon/
+watch -n1 -d grep RX /proc/softirqs
+watch -n1 -d grep RX /proc/softirqs

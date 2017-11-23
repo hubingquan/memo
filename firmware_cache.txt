@@ -1,0 +1,14 @@
+root@K80M:/ # dmesg | grep firmware
+<3>[    2.571470] synaptics_dsx_i2c 7-0038: fwu_start_reflash: Requesting firmware image Lenovo_Kobe_DVT2_PR1756986_01540009_20141104.img
+<6>[    5.721679] synaptics_dsx_i2c 7-0038: fwu_go_nogo: Device firmware ID = 1756986
+<6>[    5.721709] synaptics_dsx_i2c 7-0038: fwu_go_nogo: Image firmware ID = 1756986
+<4>[   27.395693] dhdsdio_download_firmware: concate_revision(/system/etc/firmware/fw_bcmdhd.bin, /system/etc/firmware/bcmdhd_aob.cal)
+<4>[   27.395721] dhdsdio_download_firmware: firmware path=/system/etc/firmware/fw_bcmdhd.bin_4339_a0, nvram path=/system/etc/firmware/bcmdhd_aob.cal_4339_a0_level_lp_v1
+<4>[  159.807821] firmware cache started
+<4>[  159.811422] firmware cache:mp3_dec_1495.binfirmware cache:aac_dec_1495.bin
+<4>[  159.813745] firmware cache:vtsv_lib_1495.binfirmware cache:geq_lib_1495.bin
+<4>[  159.815734] firmware cache:audclass_lib_1495.binfirmware cache:Lenovo_Kobe_DVT2_PR1756986_01540009_20141104.img
+<4>[  159.823221] firmware cache:fw_sst_1495.binfirmware cache:shisp_2401a0_v21.bin
+<4>[  159.881467] firmware cache finishedFreezing user space processes ... 
+<4>[  160.084734] firmware cache startedfirmware cache finishedFreezing user space processes ... (elapsed 0.002 seconds) done.
+

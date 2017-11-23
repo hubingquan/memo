@@ -1,0 +1,25 @@
+./apps/PRIVATE/Gallery/Gallery2/Android.mk:LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES += highlightsGson:libs/gson-2.2.4.jar
+./apps/PRIVATE/Aware/package/AwareServicePacks/AwareHubPluginsShareOne/Android.mk:                        com.google.gson
+./apps/PRIVATE/Aware/package/AwareServicePacks/AwareHubPluginsAwareService/Android.mk:LOCAL_JAVA_LIBRARIES := libpluginapi telephony-common com.google.gson
+./apps/PRIVATE/Aware/package/AwareServicePacks/AwareHubPluginsMOFD/Android.mk:                        com.google.gson
+./apps/PRIVATE/Aware/package/CDFPacks/AwareHub/Android.mk:LOCAL_JAVA_LIBRARIES := com.google.gson
+./apps/PRIVATE/Aware/awarecsp/aware_csp_providers/Android.mk:        com.google.gson \
+./apps/PRIVATE/Aware/awarecsp/aware_csp_dataloopers/Android.mk:        com.google.gson \
+./apps/PRIVATE/Kratos/CrashToolUploader/Android.mk:	libgson
+./apps/PRIVATE/Kratos/CrashToolUploader/Android.mk:	libgson:libs/gson-2.2.4.jar
+./tools/PRIVATE/debug_internal_tools/iptrak/Android.mk:    libiptrak-gson \
+./tools/PRIVATE/debug_internal_tools/iptrak/Android.mk:    libiptrak-gson:libs/gson-2.2.4.jar \
+./tools/PRIVATE/log_infra/crashinfo/Android.mk:LOCAL_JAVA_LIBRARIES := com.google.gson crashparsing
+./tools/PRIVATE/log_infra/crashreport/Android.mk:# gson lib
+./tools/PRIVATE/log_infra/crashreport/Android.mk:LOCAL_MODULE := com.google.gson
+./tools/PRIVATE/log_infra/crashreport/Android.mk:LOCAL_SRC_FILES := $(call all-java-files-under, lib/gson-2.2.1-sources)
+./tools/PRIVATE/log_infra/crashreport/Android.mk:# gson lib permissions
+./tools/PRIVATE/log_infra/crashreport/Android.mk:LOCAL_MODULE := com.google.gson.xml
+./tools/PRIVATE/log_infra/crashreport/Android.mk:LOCAL_JAVA_LIBRARIES := com.google.gson crashparsing
+./tools/PRIVATE/log_infra/Android.mk:    com.google.gson \
+./tools/PRIVATE/log_infra/Android.mk:    com.google.gson.xml \
+
+./vendor/intel/apps/PRIVATE/Gallery/Gallery2/libs/gson-2.2.4.jar
+./vendor/intel/apps/PRIVATE/Kratos/ThirdPartySample/libs/gson-2.2.4.jar
+./vendor/intel/apps/PRIVATE/Kratos/CrashToolUploader/libs/gson-2.2.4.jar
+./vendor/intel/tools/PRIVATE/debug_internal_tools/iptrak/libs/gson-2.2.4.jar

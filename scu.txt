@@ -1,0 +1,1 @@
+/home/bingquan/r44d-stable/vendor/intel/fw/PRIVATE/ifwi/anniedale/xml/MOORLDA0-VV-0000.0006.xml

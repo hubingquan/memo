@@ -1,0 +1,9 @@
+root@K80M:/ # dmesg | grep -i 'kill'
+<6>[82142.302339] lowmemorykiller: lowmem_shrink: convert oom_adj to oom_score_adj:
+<6>[82142.302375] lowmemorykiller: oom_adj 0 => oom_score_adj 0
+<6>[82142.302384] lowmemorykiller: oom_adj 1 => oom_score_adj 58
+<6>[82142.302393] lowmemorykiller: oom_adj 2 => oom_score_adj 117
+<6>[82142.302400] lowmemorykiller: oom_adj 3 => oom_score_adj 176
+<6>[82142.302407] lowmemorykiller: oom_adj 9 => oom_score_adj 529
+<6>[82142.302415] lowmemorykiller: oom_adj 15 => oom_score_adj 1000
+

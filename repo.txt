@@ -1,0 +1,31 @@
+
+ init -u ssh://android.intel.com/manifest -b platform/android/main -m android-main
+  357  cp ~/manifest-main-2013_WW33-generated.xml .repo/manifests/
+  358  repo init -m manifest-main-2013_WW33-generated.xml
+  359  repo sync -j5
+  424  repo init -u ssh://android.intel.com/manifest -b platform/android/main -m android-main && cp ~/manifest-main-2013_WW30-generated.xml .repo/manifests/ && repo init -m manifest-main-2013_WW30-generated.xml && repo sync -j5 && source build/envsetup.sh && lunch byt_t_ffrd10-userdebug && make blank_flashfiles flashfiles -j8
+  425  repo start master --all
+  458  mv .repo r42b-r/
+  463  repo sync -j5 && source build/envsetup.sh && lunch byt_t_ffrd10-userdebug && make blank_flashfiles flashfiles -j8
+  482  repo branch
+  486  cat ~/.tips/repo
+  487  cat ~/.tips/repo.txt
+  489  repo init -g default,-victoriawood,-lpe,-intel_cws,-broadcom,-bcm_cws_gps -u ssh://android.intel.com/a/aosp/platform/manifest -b platform/android/r42b-stable -m android-r42b-restricted
+  494  vi .repo/manifest.xml 
+  498  repo init -u ssh://10.241.122.127/manifest -b acer-manu -m acer-manu && repo sync -j5
+  500  repo init -u ssh://10.241.122.127/manifest -b acer-manu -m acer-manu && repo sync -j5
+
+repo init -g default,-intel_cws,-wcs,-dolby_ds1 -m manifest-main-2013_WW44-generated.xml
+
+repo init -g default,-iafw,-intel_cws,-wcs,-dolby_ds1 -m manifest-maineYYYY_WWXX-generated.xml
+repo init -u ssh://android.intel.com/manifest -b platform/android/cht51-stable -m android-cht51
+
+repo init -u ssh://android.intel.com/manifest -b platform/android/imin_legacy -m android-imin_legacy
+3. ÉÏ´«±¾µØÐÞ¸Äµ½·þÎñÆ÷
+repo forall -c git pull --rebase        ºÍ·þÎñÆ÷Í¬²½£¨ÒªÉÏ´«´úÂëÇ°
+
+3. 脡脧麓芦卤戮碌脴脨脼赂脛碌陆路镁脦帽脝梅
+repo forall -c git pull --rebase        潞脥路镁脦帽脝梅脥卢虏陆拢篓脪陋脡脧麓芦麓煤脗毛脟掳
+repo download -c a/bsp/kernel/gmin 350048/1
+repo init -u ssh://android.intel.com/a/aosp/platform/manifest  -b platform/android/sofia -m android-sofia3g_r_mr1
+repo download -c a/bsp/kernel/gmin-quilt-representation 377922/2

@@ -1,0 +1,7 @@
+beginning with pr
+  594  grep '^pr' repo-status.log 
+ending with ma
+  595  grep 'ma$' repo-status.log 
+not beginning with pr
+  596  grep -v '^pr' repo-status.log 
+

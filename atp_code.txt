@@ -1,0 +1,8 @@
+/home/bingquan/atp/wearable_device_sw/internal/projects/quark_se2_reference/include
+/home/bingquan/atp/wearable_device_sw/internal/projects/quark_se2_reference/include
+/home/bingquan/atp/wearable_device_sw/internal/projects/quark_se2_reference/quark
+defconfig_quark_se2_crb
+/home/bingquan/atlaspeak/wearable_device_sw/internal
+projects/quark_se2_reference/quark/defconfig_quark_se2_ptb
+internal/soc/quark_se2/arc_main/prj-ARC.conf
+/home/bingquan/atp2_cc/wearable_device_sw/packages/soc_drivers/soc/quark_se_2/drivers/coulomb_counter

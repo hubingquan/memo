@@ -1,0 +1,1 @@
+repo init -u ssh://hubingqu@twsged-sw001.itwn.intel.com/ged-manifest -b master -m project/manifest-rio_WW37.xml

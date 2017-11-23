@@ -1,0 +1,16 @@
+git checkout origin/master -b new5
+
+ecos
+../configure --host=arc-elf32
+
+#apps
+make ecos ECOS_COMMAND_PREFIX=arc-elf32-
+../configure --host=arc-elf32 --disable-asserts
+make
+sudo make install
+
+http://ecos-for-toradex-colibri-vf61-vybrid-module.readthedocs.io/en/latest/building.html
+http://ecos-for-toradex-colibri-vf61-vybrid-module.readthedocs.io/en/latest/building.html#build-kernel
+
+git clone git://android.intel.com/ihl2_vre   
+arc-elf32-objcopy -O srec --change-address=+0xb7d00000 ./alarms_example alarms_example.srec

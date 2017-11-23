@@ -1,0 +1,53 @@
+https://android.intel.com/552708 sensor: Add st microelectronics sensors drivers package v1.0.1
+https://android.intel.com/552709 sensor: update package for ST IIO sensors driver from v1.0.1 to v1.0.2
+https://android.intel.com/552710 iio:imu:lsm6ds3h: Add algo upload feature
+https://android.intel.com/552711 iio:imu:lsm6ds3h: added wrist-tilt feature
+https://android.intel.com/552712 iio:imu:lsm6ds3h: set reserved fifo bit if algo is enabled
+https://android.intel.com/552713 iio:imu:lsm6ds3h: check fifo size only of accel & gyro
+https://android.intel.com/552714 iio:imu:lsm6ds3h: check if upload of algo fail or not
+https://android.intel.com/552715 iio:imu:lsm6ds3h: verify algo after upload
+https://android.intel.com/552716 sensor: st lsm6ds3h sensor support
+https://android.intel.com/552717 sensor: fix read raw data from sysfs crash issue
+https://android.intel.com/552718 sensor: low power and normal mode for XL and Gyro
+https://android.intel.com/552719 sensor: avoid taking mutex twice and add retry mechanism
+https://android.intel.com/552720 sensor: enable Tap Tap detection
+https://android.intel.com/552721 sensor: fix kernel panic at iio_push_to_buffers+0x30/0xc0 issue
+https://android.intel.com/552722 sensor: we need add some ST dynamic logs for debug usage
+https://android.intel.com/552723 sensor: add lsm6ds3h wrist tilt config interface
+https://android.intel.com/552724 sensor: create a calibrate interface
+https://android.intel.com/552725 memorycorruption: kernel panic at __kmalloc+0xcb/0x270
+https://android.intel.com/552726 iio: imu: st_lsm6ds3h: disable irq in suspend
+https://android.intel.com/552727 sensor: clean v3 st_lsm6ds3h driver function typo in dev_dbg()
+https://android.intel.com/552728 sensor: change step counter pedometer default parameter
+https://android.intel.com/552729 sensor: update timestamp for step counter and detecter when resume
+https://android.intel.com/552730 sensors: add pm_runtime for driver LSM6DS3H
+https://android.intel.com/552731 lsm6ds3h: add probe retry mechanism
+https://android.intel.com/552732 sensor: change step detector event from data channel to event channel
+https://android.intel.com/552733 sensor: correct macro definitions for lsm6ds3h
+https://android.intel.com/552734 sensor: add flush support for virtual sensors
+https://android.intel.com/552735 sensor: sync read_fifo code with V2
+https://android.intel.com/552736 sensor: change wrist tilt threshold to degree 20
+https://android.intel.com/552737 sensor: fix bug when using wake up sensor at suspend resume
+https://android.intel.com/552738 sensor: set digital function odr to 104hz from 26Hz
+https://android.intel.com/552739 sensor: average the delta time to improve timestamp precision
+https://android.intel.com/552740 Sensor: To support both wake-up/non-wake-up version of accel/gyro
+https://android.intel.com/552741 sensor: set accel wake-up sensor odr to 416Hz for tap-tap detection
+https://android.intel.com/552742 sensor: update fifo_odr based on accel or gyro hardware odr
+https://android.intel.com/552743 sensor: manufacturing for sensors_gyro_selftest.sh
+https://android.intel.com/552744 sensor: fix the gyroscope reports wrong value bug
+https://android.intel.com/552745 lsm6ds3h: set buffer_data to NULL after kfree
+https://android.intel.com/552746 lsm6ds3h: Do not increment fifo_data ptr
+https://android.intel.com/552747 sensor: reset odr for do calibrate of gyroscope
+https://android.intel.com/552748 lsm6ds3h: avoid deadlock in st_lsm6ds3h_read_fifo
+https://android.intel.com/552749 sensor: fix gyro/accel wkup sensor cts sensor test failed issue
+https://android.intel.com/552750 sensor: supporting batching mode for st lsm6ds3h
+https://android.intel.com/552751 sensor: fix timestamp issue for ctsverifier test
+https://android.intel.com/552752 lsm6ds3h: disable i2c master support
+https://android.intel.com/552753 sensor: correct a calibration error in Z axis
+https://android.intel.com/552754 sensor: fix batching issue for ctsverifier test
+https://android.intel.com/552755 sensor: step counter threshold adjustment interface
+https://android.intel.com/552756 sensor: adjust st_lsm6ds3h tilt algo loading sequence
+https://android.intel.com/552757 sensor: fix the CTS SensorTimeStamps fail issue
+https://android.intel.com/552758 sensor: code optimization and avoid memory leak
+https://android.intel.com/552759 sensor: expose wrist tilt configurable parameters to sys nodes
+

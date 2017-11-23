@@ -1,0 +1,49 @@
+  DBGLINK  /home/bingquan/android-r6apache/out/target/product/apache/host_x86_64/extractrd.dbg
+  make[1]: Leaving directory `/home/bingquan/android-r6apache/vendor/intel/hardware/PRIVATE/rgx/rogue/build/linux/intel_android'
+
+  Installing PowerVR 'rogueddk_1.5@3830101 (release)' on /home/bingquan/android-r6apache/out/target/product/apache/IMG
+
+  File system installation root is /home/bingquan/android-r6apache/out/target/product/apache/IMG
+
+  chown: changing ownership of 鈥??/home/bingquan/android-r6apache/out/target/product/apache/IMG/data鈥??: Operation not permitted
+  chown: changing ownership of 鈥??/home/bingquan/android-r6apache/out/target/product/apache/IMG/data/app鈥??: Operation not permitted
+  Installing User components for architecture target_i686
+  shared_library libPVRScopeServices.so -> /system/vendor/lib/libPVRScopeServices.so
+  shared_library libpvrANDROID_WSEGL.so -> /system/vendor/lib/libpvrANDROID_WSEGL.so
+  shared_library libEGL_POWERVR_ROGUE.so -> /system/vendor/lib/egl/libEGL_POWERVR_ROGUE.so
+  executable framebuffer_test -> /system/vendor/bin/framebuffer_test
+  shared_library libglslcompiler.so -> /system/vendor/lib/libglslcompiler.so
+  shared_library gralloc.brightonshores.so -> /system/vendor/lib/hw/gralloc.brightonshores.so
+  executable hwperfbin2jsont -> /system/vendor/bin/hwperfbin2jsont
+  shared_library libIMGegl.so -> /system/vendor/lib/libIMGegl.so
+  shared_library libcptcompiler.so -> /system/vendor/lib/libcptcompiler.so
+  shared_library libcreatesurface.so -> /system/vendor/lib/libcreatesurface.so
+  shared_library librsccompiler.so -> /system/vendor/lib/librsccompiler.so
+  bitcode_library librscruntime.bc -> /system/vendor/lib/librscruntime.bc
+  shared_library libsrv_init.so -> /system/vendor/lib/libsrv_init.so
+  shared_library libsrv_um.so -> /system/vendor/lib/libsrv_um.so
+  shared_library libufwriter.so -> /system/vendor/lib/libufwriter.so
+  shared_library libusc.so -> /system/vendor/lib/libusc.so
+  shared_library memtrack.brightonshores.so -> /system/vendor/lib/hw/memtrack.brightonshores.so
+  shared_library libpvrcpt.so -> /system/vendor/lib/libpvrcpt.so
+  shared_library libGLESv1_CM_POWERVR_ROGUE.so -> /system/vendor/lib/egl/libGLESv1_CM_POWERVR_ROGUE.so
+  shared_library libGLESv2_POWERVR_ROGUE.so -> /system/vendor/lib/egl/libGLESv2_POWERVR_ROGUE.so
+  executable pvrdebug -> /system/vendor/bin/pvrdebug
+  executable pvrsrvctl -> /system/vendor/bin/pvrsrvctl
+  executable pvrtld -> /system/vendor/bin/pvrtld
+  shared_library libPVRRS.so -> /system/vendor/lib/libPVRRS.so
+  shared_library libPVRRS.sha1.so -> /system/vendor/lib/libPVRRS.sha1.so
+
+  Installing User components for architecture target_neutral
+  copy_files pvrhwperf -> /system/vendor/bin/pvrhwperf
+  copy_files pvrlogdump -> /system/vendor/bin/pvrlogdump
+
+  Building the IMG Graphics tarball
+  mkdir -p out/target/product/apache/obj/FAKE/IMG_graphics_intermediates/
+  mv out/target/product/apache/IMG_graphics.tgz out/target/product/apache/obj/FAKE/IMG_graphics_intermediates/IMG_graphics.tgz
+
+#### make failed to build some targets (01:22:05 (hh:mm:ss)) ####
+
+~/android-r6apache$ 
+~/android-r6apache$ ls -l /home/bingquan/android-r6apache/out/target/product/apache/IMG/data
+

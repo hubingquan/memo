@@ -1,0 +1,47 @@
+git remote add blvc https://github.com/BVLC/caffe.git
+git fetch blvc
+git checkout blvc_caffe remotes/blvc/master
+git checkout blvc remotes/blvc/master
+git branch
+git branch -a
+git checkout -b blvc remotes/blvc/master
+git branch
+git log -n3
+git checkout master
+git branch
+git rebase blvc
+git log -n1
+git diff
+git diff
+git diff
+git diff
+git add Makefile  ihl2/networks/*.prototxt ihl2/src/ihl2net.cpp 
+
+git rebase --continue
+git diff
+git add Makefile 
+git rebase --continue
+git diff
+git add Makefile
+git rebase --continue
+git rebase --skip
+git rebase --continue
+git log -n1
+git log
+git branch
+git checkout blvc
+git fetch
+git checkout master
+git fetch
+git log -n1
+git rebase blvc
+git branch
+git pull
+git log -n1
+git push origin master
+git log 
+
+~/AIP/caffe$ git remote -v
+origin  https://github.com/BVLC/caffe.git (fetch)
+origin  https://github.com/BVLC/caffe.git (push)
+

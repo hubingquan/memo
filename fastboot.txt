@@ -1,0 +1,2 @@
+fastboot -t 192.168.42.1 flash boot boot.img
+fastboot -t 192.168.42.1 continue

@@ -1,0 +1,1 @@
+sudo badblocks -s -v -c 32 /dev/sdc

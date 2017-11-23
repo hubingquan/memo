@@ -1,0 +1,14 @@
+ss 
+penssl-1.0.0c.tar.gz
+3.
+cd openssl-1.0.0c/
+4.
+./config  --prefix=/usr/local --openssldir=/usr/local/ssl
+5.
+make && make install
+6.
+./config shared --prefix=/usr/local --openssldir=/usr/local/ssl
+7.
+make clean
+8.
+make && make install

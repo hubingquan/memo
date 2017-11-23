@@ -1,0 +1,39 @@
+Building a gcc cross-compiler for i386-elf
+
+The document describes how to build a cross-compiler for i386-elf target on Solaris/SPARC 2.6.  (The same instructions will likely work with other versions of Unix as well.)
+
+Get the files:
+
+gcc-2.95.2.tar.gz
+binutils-2.10.1.tar.gz
+newlib-1.9.0.tar.gz
+gcc and binutils are available from any GNU ftp mirror.  newlib is available from any Redhat sourceware mirror.
+
+Unpack them from the same directory (referred to here as $source_dir).  Create a directory in which to install the software (referred to here as $install_dir).
+
+Download the following file into $source_dir: http://sources.redhat.com/ecos/tools/patches/ecos-gcc-2952.pat
+
+Commands to run
+
+cd $source_dir
+mkdir build-binutils
+cd build-binutils
+../binutils-2.10.1/configure --prefix=$install_dir --target=i386-elf -v
+gmake all install
+cd ..
+
+cd gcc-2.95.2
+patch < ../ecos-gcc-2952.pat
+cd ..
+mkdir build-gcc
+cd build-gcc
+export PATH=$install_dir/bin:$PATH
+../gcc-2.95.2/configure --prefix=$install_dir --target=i386-elf \
+  --with-gnu-as --with-gnu-ld --with-newlib \
+    --with-headers=$source_dir/newlib-1.9.0/newlib/libc/include
+    gmake all install
+    At this point we can build GeekOS!
+
+    NOTE: you can specify --enable-languages=c to the gcc configure command in order to avoid building the c++, java, f77, etc. front-ends.
+
+    It might be useful to actually build newlib, but it's not required for GeekOS.

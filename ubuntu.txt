@@ -1,0 +1,10 @@
+sudo apt-get update
+sudo apt-cache linux-image
+sudo apt-cache install linux-image-**
+sudo apt-get dist-upgrade
+dmidecode 
+lsb_release -a
+sudo journalctl -xe
+find . -type f -name '*.txt' -exec sed -i "s/{find}/{replace}/g" {} \;
+
+tree -LhaC3
